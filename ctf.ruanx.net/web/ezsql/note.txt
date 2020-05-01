@@ -1,0 +1,3 @@
+去 https://ctf-wiki.github.io/ctf-wiki/web/sqli-zh/ 随便拉了一个
+
+结果就过了 = =
