@@ -1,0 +1,6 @@
+[
+  { "op": "To Base",
+    "args": [16] },
+  { "op": "From Hex",
+    "args": ["Auto"] }
+]
