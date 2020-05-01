@@ -2,6 +2,8 @@
 desktop.ini
 .desktop.ini
 *.exe
+*.class
+tempCodeRunnerFile.*
 
 package-lock.json
 
