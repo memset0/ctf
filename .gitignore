@@ -1,3 +1,10 @@
+.DS_Store
+desktop.ini
+.desktop.ini
+*.exe
+
+package-lock.json
+
 # Logs
 logs
 *.log
