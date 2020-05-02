@@ -1,0 +1,1 @@
+利用 `proc/self/fd/3` 来拿文件接口，相关教程见 [Link](http://archive.is/8opRE)。
