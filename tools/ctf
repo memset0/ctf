@@ -1,9 +1,10 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 import os
 import sys
 import colorama
+import webbrowser
 
 path = {
 	'ctf': os.path.realpath(os.path.join(os.path.split(os.path.realpath(__file__))[0], '../')),
@@ -22,12 +23,20 @@ command = {
 
 	'zrchpr': ['wine', os.path.join(path['wine'], 'Program\ Files\ \(x86\)/Elcomsoft\ Password\ Recovery/Advanced\ Archive\ Password\ Recovery/ARCHPR.exe')],
 	'010editor': ['wine', os.path.join(path['ctf'], 'tools', '010Editor', '010Editor.exe')],
+
+	'google': [path['ctf'] + '/tools/ctf', 'browser', 'https://google.com'],
+	'zhihu': [path['ctf'] + '/tools/ctf', 'browser', 'https://zhihu.com'],
+	'cyberchef': [path['ctf'] + '/tools/ctf', 'browser', 'https://gchq.github.io/CyberChef/'],
 }
 
 
 def run(prog, argv):
 	if prog == 'ls' or prog == 'list':
 		print(' '.join(sorted(command.keys())))
+	if prog == 'browser':
+		webbrowser.open(argv[0])
+	if prog == 'search':
+		webbrowser.open('https://www.google.com/search?q=%s' % (' '.join(argv)))
 	if prog in command.keys():
 		cmd = command[prog]
 		shell = ' '.join((cmd if isinstance(cmd, list) else [cmd]) + argv)
