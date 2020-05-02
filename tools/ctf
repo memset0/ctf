@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import os
+import sys
+import colorama
+
+path = {
+	'ctf': os.path.realpath(os.path.join(os.path.split(os.path.realpath(__file__))[0], '../')),
+	'wine': os.path.expanduser('~/.wine/drive_c'),
+}
+
+command = {
+	'python': 'python',
+	'python3': 'python3',
+	'wine': 'wine',
+	'wine64': 'wine64',
+
+	'zsteg': 'zsteg',
+
+	'stegsolve': ['java', '-jar', os.path.join(path['ctf'], 'tools', 'Stegsolve', 'Stegsolve.jar')],
+
+	'zrchpr': ['wine', os.path.join(path['wine'], 'Program\ Files\ \(x86\)/Elcomsoft\ Password\ Recovery/Advanced\ Archive\ Password\ Recovery/ARCHPR.exe')],
+	'010editor': ['wine', os.path.join(path['ctf'], 'tools', '010Editor', '010Editor.exe')],
+}
+
+
+def run(prog, argv):
+	if prog == 'ls' or prog == 'list':
+		print(' '.join(sorted(command.keys())))
+	if prog in command.keys():
+		cmd = command[prog]
+		shell = ' '.join((cmd if isinstance(cmd, list) else [cmd]) + argv)
+		print(colorama.Fore.GREEN + prog + colorama.Fore.YELLOW + ' >> ' + colorama.Fore.GREEN + shell + colorama.Style.RESET_ALL)
+		os.system(shell)
+
+if __name__ == '__main__':
+	# print(path, command)
+	if len(sys.argv) < 2:
+		print(colorama.Fore.RED + 'More arguments needed!' + colorama.Style.RESET_ALL)
+	else:
+		run(sys.argv[1], sys.argv[2:])
