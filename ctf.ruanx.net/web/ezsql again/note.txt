@@ -1,0 +1,7 @@
+谷歌得知这样的 sql 查询不好注入
+
+再谷歌了一下知道 sql 查不到东西就返回 NULL
+
+在 index.php 那里捣鼓了半天，默默掏出 postman 不 POST password，结果真过了
+
+出题人真是良心（？）啊，还在 flag 里强调不是注入题（雾
