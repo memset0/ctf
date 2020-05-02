@@ -1,8 +1,6 @@
 .DS_Store
 desktop.ini
 .desktop.ini
-*.exe
-*.class
 tempCodeRunnerFile.*
 
 package-lock.json
