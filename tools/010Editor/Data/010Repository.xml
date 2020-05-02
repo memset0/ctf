@@ -1,0 +1,4407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<update>Updated 317 records - 2019-12-06 15:38:18</update>
+<template>
+  <id>1</id>
+  <filename>BMP.bt</filename>
+  <version>2.2</version>
+  <authors>SweetScape Software</authors>
+  <description>Parse BMP image files.</description>
+  <category>Image</category>
+  <filemask>*.bmp</filemask>
+  <idbytes>42 4D //BM</idbytes>
+  <hash>320f4cf7614485879ea6514f4437c010a7df1c45</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>2</id>
+  <filename>WAV.bt</filename>
+  <version>1.1</version>
+  <authors>SweetScape Software</authors>
+  <description>Parse WAV audio files.</description>
+  <category>Audio</category>
+  <filemask>*.wav</filemask>
+  <idbytes>52 49 46 46 [+4] 57 41 56 45 //RIFF????WAVE</idbytes>
+  <hash>6769630cdc990e1002d923844411504c91f75a55</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>3</id>
+  <filename>ZIP.bt</filename>
+  <version>2.3</version>
+  <authors>SweetScape Software</authors>
+  <description>Parse ZIP archive files.</description>
+  <category>Archive</category>
+  <filemask>*.zip</filemask>
+  <idbytes>50 4B //PK</idbytes>
+  <hash>3e78c2919c75aa677cf63e1c28edcc844a79467d</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<script>
+  <id>4</id>
+  <filename>IsASCII.1sc</filename>
+  <version>2.2</version>
+  <authors>SweetScape Software</authors>
+  <description>Determines if the currently open file contains only ASCII characters (byte range 0..127). If a non-ASCII byte is found, the cursor is moved to the first byte.</description>
+  <category>Text</category>
+  <hash>f20ab18dcbe7e0b6c4858c54e454773a48848f40</hash>
+  <requiresversion>4</requiresversion>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>5</id>
+  <filename>MultiplePaste.1sc</filename>
+  <version>2.2</version>
+  <authors>SweetScape Software</authors>
+  <description>Executes a paste operation a number of times. The user can enter the number of times to paste in an input box.</description>
+  <category>Clipboard</category>
+  <hash>68275b43936a85c477a0dfab5e9a34c456975c6f</hash>
+  <requiresversion>4</requiresversion>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>6</id>
+  <filename>Randomize.1sc</filename>
+  <version>2.3</version>
+  <authors>SweetScape Software</authors>
+  <description>Assigns a set of random byte values to a file. If a selection is made only the selected bytes are modified, otherwise the whole file is modified. The user can enter a minimum and maximum value to generate.</description>
+  <category>Binary</category>
+  <hash>8ab5a3311f7a29f9c6b247f7107c13c6226335f1</hash>
+  <requiresversion>4</requiresversion>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>7</id>
+  <filename>SplitFile.1sc</filename>
+  <version>1.2</version>
+  <authors>SweetScape Software</authors>
+  <description>Split a large file into a number of smaller files. The user must specify the number of bytes per created file and also provide the filename of the first file. Note that the filename must contain numbers (e.g. 'c:\temp\file.bmp.001' or 'c:\temp\file0000.dat').</description>
+  <category>Binary</category>
+  <hash>227f30f5daa217c702afb6467d81b019b335abf9</hash>
+  <requiresversion>4</requiresversion>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>8</id>
+  <filename>JoinFile.1sc</filename>
+  <version>1.2</version>
+  <authors>SweetScape Software</authors>
+  <description>Reassembles files that were split with the SplitFile.1sc script. Open the first file in the file sequence with the file dialog that is displayed. The file name must contain numbers (e.g. 'c:\temp\file.bmp.001'). The joined file will be created as a new file.</description>
+  <category>Binary</category>
+  <hash>33900ac79b13bf2d3741bb8d40459f0b10732949</hash>
+  <requiresversion>4</requiresversion>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>9</id>
+  <filename>ArrayOfStrings.1sc</filename>
+  <version>1.1</version>
+  <authors>Artur Babecki</authors>
+  <description>Contains utility functions for packing or unpacking a set of strings into an array. Includes an example.</description>
+  <category>Utility</category>
+  <hash>dba46aa65658a26e016b3d3ab812a7288fbd626e</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>10</id>
+  <filename>BatchChecksum.1sc</filename>
+  <version>1.1</version>
+  <authors>SweetScape Software</authors>
+  <description>Demonstrates how to batch process a set of files. Takes as input a text file containing a list of file names, one per line. Opens each file in the list, performs processing on the file (in this case does an MD5 checksum) and then closes the file.</description>
+  <category>Checksum</category>
+  <hash>44f9ab35dde91a10e719939cfda07a245cb184f8</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>11</id>
+  <filename>BinToI_IToBin.1sc</filename>
+  <version>1.2</version>
+  <authors>Artur Babecki</authors>
+  <description>Functions for converting from a binary string to an integer and vise versa. Note that 010 Editor v4 now contains the built-in functions IntToBinaryStr and BinaryStrToInt.</description>
+  <category>Utility</category>
+  <hash>16ca00668173b0560d86ed3207cf5346ca529814</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>12</id>
+  <filename>CmpLines.1sc</filename>
+  <version>1.1</version>
+  <authors>Artur Babecki</authors>
+  <description>Compares the current text line with the next line and sets bookmarks at characters which differ, marking them red.</description>
+  <category>Compare</category>
+  <hash>b866e961685f7780715a70ba8dd64fb958dd9b3c</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>13</id>
+  <filename>ConvertBytesToInts.1sc</filename>
+  <version>1.1</version>
+  <authors>Artur Babecki</authors>
+  <description>Conversion of an array of bytes to integer types (short, int, int64).</description>
+  <category>Utility</category>
+  <hash>86eb72b0c10e37b455c4a1b37ab801be16a9cb1e</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>14</id>
+  <filename>CopyAsAsm.1sc</filename>
+  <version>1.1</version>
+  <authors>SweetScape Software</authors>
+  <description>Copies the current selection to the clipboard as hex bytes in a format suitable for inclusion in an assembly program. If no selection is made the whole file is copied.</description>
+  <category>Clipboard</category>
+  <hash>db6fea0cc58dc87842cc58ca802037ea56e5b279</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>15</id>
+  <filename>CopyAsBinary.1sc</filename>
+  <version>1.1</version>
+  <authors>SweetScape Software</authors>
+  <description>Copies the currently selected bytes to the clipboard in binary format. Note that this functionality is now built into 010 Editor using 'Copy &gt; Copy As &gt; Copy as Binary Text'.</description>
+  <category>Clipboard</category>
+  <hash>a01cc28b8221bf5b0d8f8245bf71169c2317c768</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>16</id>
+  <filename>CopyAsCpp.1sc</filename>
+  <version>1.1</version>
+  <authors>SweetScape, ADACH</authors>
+  <description>Copies the selection to the clipboard as hex bytes suitable for inclusion in an C/C++ program. If no selection is made the whole file is copied. Note that this functionality is now built into 010 Editor using 'Copy &gt; Copy As &gt; Copy as C Code'.</description>
+  <category>Clipboard</category>
+  <hash>aaa775564ea9d3be00264ba37341ec6fcb13f0ef</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>17</id>
+  <filename>CopyAsPascal.1sc</filename>
+  <version>1.1</version>
+  <authors>Bernhard Foltz</authors>
+  <description>Copy selection or entire file to the clipboard as Pascal code. The text copied into the clipboard contains a Pascal constant definition, followed by the data as Hex bytes in Pascal notation.</description>
+  <category>Clipboard</category>
+  <hash>9f51769112ee1fbbe91ddfe0ad6aa0e9e87ff632</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>18</id>
+  <filename>CopyAsPython.1sc</filename>
+  <version>1.1</version>
+  <authors>Adrian Nicolaiev</authors>
+  <description>Copy selection or entire file as Python code. Counts number of bytes and the Python Data Array is also copied to the Clipboard.</description>
+  <category>Clipboard</category>
+  <hash>0579abc1c5fdbcd32a50a6c21cc642240f020b38</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>19</id>
+  <filename>CountBlocks.1sc</filename>
+  <version>2.1</version>
+  <authors>Artur Babecki</authors>
+  <description>This script finds blocks of identical characters within the file or within the selection. Results are stored in bookmarks and printed in the output pane. Block size is defined by the variable LIMIT.</description>
+  <category>Binary</category>
+  <hash>6894b088b3f7b22989d6f091c4fade093db65fbb</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>20</id>
+  <filename>CreateMassData.1sc</filename>
+  <version>1.1</version>
+  <authors>Dieter Lamberty</authors>
+  <description>Creates files with up to 1 million characters for the use as input in data fields to check the data boundaries.</description>
+  <category>Text</category>
+  <hash>71b6be0d6f88c225e0345e1b2a2bc7cc0078bab6</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>21</id>
+  <filename>DecodeBase64.1sc</filename>
+  <version>1.1</version>
+  <authors>Bernhard Foltz</authors>
+  <description>Decode the selected bytes or the entire file from Base64 code into binary. Base64 is a code used in email attachments or similar purposes, for to transfer binary data, where only ASCII data can be transmitted. In each character are placed 6 bits. This script extracts from the characters the least significant 6 bits and puts it together to whole bytes. Note that some of this functionality is now built directly into 010 Editor.</description>
+  <category>Binary</category>
+  <hash>976d155aaa751300c1ba5b66b9780102fe9fc088</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>22</id>
+  <filename>DelColumn.1sc</filename>
+  <version>0.1</version>
+  <authors>Artur Babecki</authors>
+  <description>Deletes all columns in a text file between the start and end of the selection.</description>
+  <category>Text</category>
+  <hash>447199c8c9acd98bde3b1b8da1f83d1a0c8d7a13</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>23</id>
+  <filename>DumpStrings.1sc</filename>
+  <version>0.1</version>
+  <authors>Didier Stevens</authors>
+  <description>List all ASCII and Unicode strings in a file. Note that this functionality is now built into 010 Editor using 'Search &gt; Find Strings'.</description>
+  <category>Search</category>
+  <hash>7a3838ac58c5b99f1e9dfe9a898dc304d1ce1d0a</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>24</id>
+  <filename>EbookClean.1sc</filename>
+  <version>1.1</version>
+  <authors>tankl</authors>
+  <description>Erase repeated BLANK_LINES, BLANKs or lines including selected texts in files.</description>
+  <category>Text</category>
+  <hash>cb1d45bd18464c83bf585da22ae2e4f7814ca6f1</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>25</id>
+  <filename>EncodeBase64.1sc</filename>
+  <version>1.1</version>
+  <authors>uuMonkey.ljz</authors>
+  <description>Encode bytes to Base64. Note this functionality is now included in 010 Editor using 'Copy &gt; Copy As &gt; Copy as Base64' or 'File &gt; Export Hex'.</description>
+  <category>Binary</category>
+  <hash>70b2e1a81b54b0b83f011134e797711a0debcb6a</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>26</id>
+  <filename>Entropy.1sc</filename>
+  <version>0.1</version>
+  <authors>Didier Stevens</authors>
+  <description>Displays the entropy value for a file or selection. The more random the file looks, the more the entropy value approaches 8.0 (its maximum value).</description>
+  <category>Binary</category>
+  <hash>f9fd0ba8b7a0c4bd359b8c3d0886ff0381aba3a3</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>27</id>
+  <filename>Find_Diff_Down.1sc</filename>
+  <version>1.1</version>
+  <authors>Artur Babecki</authors>
+  <description>Finds the first byte with a different value than the current byte. Allows to skip large blocks filled with the same value. Search direction is down.</description>
+  <category>Search</category>
+  <hash>c8dca61d723b099b8b96fcf84a0c3a78bb072a1b</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>28</id>
+  <filename>Find_Diff_Down_RE.1sc</filename>
+  <version>1.1</version>
+  <authors>Artur Babecki</authors>
+  <description>Finds the first byte which differs from the byte under current cursor position. Allows to skip large blocks filled with the same value. This version searches down and uses regular expressions.</description>
+  <category>Search</category>
+  <hash>29ef4f25346d3c52821e8b67a65c36fa917d9f95</hash>
+  <requiresversion>6</requiresversion>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>29</id>
+  <filename>Find_Diff_Up.1sc</filename>
+  <version>1.1</version>
+  <authors>Artur Babecki</authors>
+  <description>Finds the first byte with a different value than the current byte. Allows skipping large blocks filled with the same byte. Search direction is up.</description>
+  <category>Search</category>
+  <hash>0818b1e2364a515ffeef35ee59fef418839a0498</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>30</id>
+  <filename>Find_Diff_Up_RE.1sc</filename>
+  <version>1.1</version>
+  <authors>Artur Babecki</authors>
+  <description>Finds the first byte with a different value than the current byte. Allows skipping large blocks filled with the same byte. Search direction is up and uses regular expressions.</description>
+  <category>Search</category>
+  <hash>f74b633bf8c75d956cac6cd2c43505504c51f54d</hash>
+  <requiresversion>6</requiresversion>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>31</id>
+  <filename>FindAllClipboardBytes.1sc</filename>
+  <version>1.1</version>
+  <authors>Artur Babecki</authors>
+  <description>Find all occurrences of bytes stored in the clipboard. Creates bookmarks for all occurrences found.</description>
+  <category>Search</category>
+  <hash>22d7f0b22cb28cad5de13d2d5e9f24484a73c153</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>32</id>
+  <filename>FindBookmarksNearCursor.1sc</filename>
+  <version>1.1</version>
+  <authors>Artur Babecki</authors>
+  <description>Finds the nearest bookmarks to the cursor. Places the cursor at the previous bookmark and optionally selects bytes to the next bookmark.</description>
+  <category>Bookmarks</category>
+  <hash>c4ca63c7942f146bfda74dc82aec16ab9060d44e</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>33</id>
+  <filename>FindClipboardBytes.1sc</filename>
+  <version>1.1</version>
+  <authors>Artur Babecki</authors>
+  <description>Find the first occurrence of the bytes stored in the clipboard. The bytes found are selected and the cursor is positioned after or before the selection according to the search direction.</description>
+  <category>Search</category>
+  <hash>3faa01232c97a4cb0ccb5b8e2cb2d66a2bb097ea</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>34</id>
+  <filename>FindLongLines.1sc</filename>
+  <version>1.1</version>
+  <authors>SweetScape Software</authors>
+  <description>Prints out all text lines in a file that are longer than a certain tolerance.</description>
+  <category>Search</category>
+  <hash>8f1873febd4536e7a437887f2e59a05a1c2075a8</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>35</id>
+  <filename>Fuzzer.1sc</filename>
+  <version>0.1</version>
+  <authors>Didier Stevens</authors>
+  <description>Fuzz a file by overwriting random locations.</description>
+  <category>Binary</category>
+  <hash>dbf0319244eb361fef4934d430bf0ce104c86da3</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>36</id>
+  <filename>GetFileIndexOrName.1sc</filename>
+  <version>1.1</version>
+  <authors>Anon</authors>
+  <description>Utility functions to extract the file name from a file path, or to look up a file index from a file name. Note that 010 Editor now contains the built-in functions FileNameGetBase and FindOpenFile.</description>
+  <category>Utility</category>
+  <hash>23a5c62306a3e3b38569bf85406f1b32fd7240f9</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>37</id>
+  <filename>GUID.1sc</filename>
+  <version>0.1</version>
+  <authors>Didier Stevens</authors>
+  <description>Formats a 16 byte sequence as a Microsoft GUID, prints the result and then copies the result to the clipboard.</description>
+  <category>Utility</category>
+  <hash>7c8c25f8439e4dbda9a9eb2f2fc891ef400daf00</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>38</id>
+  <filename>HexToAsciiString.1sc</filename>
+  <version>1.1</version>
+  <authors>N0VA8o</authors>
+  <description>Convert hex data to ascii string. Eg. 01020304 -&gt; "\x01\x02\x03\x04".</description>
+  <category>Utility</category>
+  <hash>a4f7958c05967cee23b8e4833441bef981b673fd</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>39</id>
+  <filename>ImportBookmarksCSV.1sc</filename>
+  <version>1.1</version>
+  <authors>Artur Babecki</authors>
+  <description>Imports a set of bookmarks from a CSV file.</description>
+  <category>Bookmarks</category>
+  <hash>9811c6d30bf8cfed370c3fe8334e2d2d705b7092</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>40</id>
+  <filename>ImportFindAllCSV.1sc</filename>
+  <version>1.1</version>
+  <authors>Artur Babecki</authors>
+  <description>Imports a CSV file exported from a Find All operation and creates bookmarks for each occurrence.</description>
+  <category>Search</category>
+  <hash>b83be24664c36041a2e94ad321f8170088db938c</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>41</id>
+  <filename>InsertTiffTag.1sc</filename>
+  <version>1.1</version>
+  <authors>Scott Winder</authors>
+  <description>Inserts the specified tag into a TIFF image, updating the necessary attributes and offsets accordingly.</description>
+  <category>Format Specific</category>
+  <hash>9e04eee48e9f0a9059970eb7e68cc256da939a02</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>42</id>
+  <filename>Interleave.1sc</filename>
+  <version>1.1</version>
+  <authors>SweetScape Software</authors>
+  <description>Interleaves the bytes of two files together. See Uninterleave.1sc to separate the interleaved file.</description>
+  <category>Binary</category>
+  <hash>302d7a3dd98d44c55bc1c15bf9c143e4b3e1aa4a</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>43</id>
+  <filename>Js-unicode-escape.1sc</filename>
+  <version>0.1</version>
+  <authors>Didier Stevens</authors>
+  <description>%u encode the selected bytes (little endian), similar to JavaScript's escape function.</description>
+  <category>Internet</category>
+  <hash>80e122a29fa8ce47932192fd786930410bf04be2</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>44</id>
+  <filename>Js-unicode-unescape.1sc</filename>
+  <version>0.1</version>
+  <authors>Didier Stevens</authors>
+  <description>Decodes a %u encoding, similar to JavaScript's unescape function.</description>
+  <category>Internet</category>
+  <hash>38fe0c298103a7a3d85e01fcd11f89d387c39b21</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>45</id>
+  <filename>NibblesReverse.1sc</filename>
+  <version>1.2</version>
+  <authors>n0va8o</authors>
+  <description>Reverse nibbles of data. Eg. DF C2 A1 ---&gt;to ---&gt; FD 2C 1A.</description>
+  <category>Binary</category>
+  <hash>f58614ec8b573f074a876eb415b07e01c1da0a31</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>46</id>
+  <filename>ParseCSV.1sc</filename>
+  <version>1.1</version>
+  <authors>Artur Babecki</authors>
+  <description>A set of functions to help parsing CSV data with an example. Other separator than "," can be specified.</description>
+  <category>Utility</category>
+  <hash>8f8e8f53fd97f405f592b36b19f4a24b95a1797b</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>47</id>
+  <filename>Patchmaker.1sc</filename>
+  <version>0.1</version>
+  <authors>Didier Stevens</authors>
+  <description>Generate a 010 script to patch a file based on differences. The files must be the same size.</description>
+  <category>Compare</category>
+  <hash>561affc1d96830aff0d2624c481f35c4dd1110e6</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>48</id>
+  <filename>QuickSort.1sc</filename>
+  <version>1.1</version>
+  <authors>SweetScape Software</authors>
+  <description>Demonstrates how to do a quicksort on an array.</description>
+  <category>Utility</category>
+  <hash>6a900dd062411965c2d8aaeb376ee3b890b1c672</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>49</id>
+  <filename>RecordSearch.1sc</filename>
+  <version>1.1</version>
+  <authors>Artur Babecki</authors>
+  <description>Treats a file as a set of blocks and searches for a pattern at the beginning of each block. Could be used, for example, to search for a pattern at the beginning of each disk sector.</description>
+  <category>Search</category>
+  <hash>b5960764554df7961e46b8b8e6125f86a9aef27c</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>50</id>
+  <filename>Rot-13.1sc</filename>
+  <version>1.1</version>
+  <authors>Artur Babecki</authors>
+  <description>ROT-13 decoder/encoder of the selected block.</description>
+  <category>Binary</category>
+  <hash>eae0d318b63021ab33f93b4f3e316f869351cab0</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>51</id>
+  <filename>SectorSearch.1sc</filename>
+  <version>1.1</version>
+  <authors>SweetScape Software</authors>
+  <description>Searches at the start of each sector for a value. Moves the cursor to the next occurrence every time the script is run.</description>
+  <category>Search</category>
+  <hash>25ecb7be0204983ac310873a458df95c8d97ebfe</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>52</id>
+  <filename>SelToLowerASCII.1sc</filename>
+  <version>1.1</version>
+  <authors>Artur Babecki</authors>
+  <description>Sets all letters in the selection to lower case. Note this functionality is now built into 010 Editor using 'Format &gt; Lowercase'.</description>
+  <category>Text</category>
+  <hash>72c961d6508515858c52bff07207ed350ec59522</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>53</id>
+  <filename>SelToULowerASCII.1sc</filename>
+  <version>1.1</version>
+  <authors>Artur Babecki</authors>
+  <description>Sets the first letter of the selection to upper case and all following letters to lower case. Note this functionality is now built into 010 Editor using 'Format &gt; Capitalize'.</description>
+  <category>Text</category>
+  <hash>da6d73e7d796c29574eda3d0658e207dfc5b0675</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>54</id>
+  <filename>SelToUpperASCII.1sc</filename>
+  <version>1.1</version>
+  <authors>Artur Babecki</authors>
+  <description>Sets all letters in the selection to upper case. Note this functionality is now built into 010 Editor using 'Format &gt; Uppercase'.</description>
+  <category>Text</category>
+  <hash>99a349de9071e7b9b4a8605329a62f8a1fa4f2bc</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>55</id>
+  <filename>SortLines.1sc</filename>
+  <version>1.1</version>
+  <authors>Alec Ginsburg</authors>
+  <description>Sort (and optionally remove duplicate) lines in a text file in ascending order.</description>
+  <category>Text</category>
+  <hash>b37cce2792784003c6fe418d2bc5b0f61567835a</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>56</id>
+  <filename>StringPlus.1sc</filename>
+  <version>1.1</version>
+  <authors>N0VA8o</authors>
+  <description>Add a number to each character of the selected string or whole file.</description>
+  <category>Binary</category>
+  <hash>c6e4d8b880a7da2905190d8ae1c5525ca8eae15c</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>57</id>
+  <filename>StringReplace.1sc</filename>
+  <version>1.1</version>
+  <authors>Aaron DM</authors>
+  <description>Utility function for searching for a value within a string and replacing it with another value.</description>
+  <category>Search</category>
+  <hash>b0cba664d7d66a3938fb2a8796ee7a2ffab27b24</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>58</id>
+  <filename>StringReverse.1sc</filename>
+  <version>1.1</version>
+  <authors>n0va8o</authors>
+  <description>Utility for reversing a string.</description>
+  <category>Text</category>
+  <hash>ecc5fcccb742551291d574853c1689b20430776f</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>59</id>
+  <filename>sWeEtSCApE.1sc</filename>
+  <version>1.1</version>
+  <authors>Artur Babecki</authors>
+  <description>Creates all upper/lower case combinations of a string and writes them to a file.</description>
+  <category>Text</category>
+  <hash>f4aa5c0b6e5821e54a3ac38f895ced974ed12a2b</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>60</id>
+  <filename>Uninterleave.1sc</filename>
+  <version>1.1</version>
+  <authors>SweetScape Software</authors>
+  <description>When given an interleaved file, this script creates two files by separating the interleaved data. See Interleave.1sc for the reverse operation.</description>
+  <category>Binary</category>
+  <hash>1ef3fda29b8e295986cebcf52ac0127b1e85c155</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>61</id>
+  <filename>URLDecoder.1sc</filename>
+  <version>1.1</version>
+  <authors>N0VA8o</authors>
+  <description>Convert %xx in a URL to a char. Eg. AAA%3DCCC =&gt; AAA=CCC.</description>
+  <category>Internet</category>
+  <hash>a04ae91cac865a94e91d6ac49818d1d243b1c013</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>62</id>
+  <filename>XORSelection.1sc</filename>
+  <version>3.1</version>
+  <authors>Didier Stevens</authors>
+  <description>Xors the current selection with a set of bytes, which causes the bytes to be encoded so they cannot be read by a human. Run the Xor again on the encoded selection to decode the data.</description>
+  <category>Binary</category>
+  <hash>8878191b2f1116fd904a5a81e465d89872a2463a</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<script>
+  <id>63</id>
+  <filename>XORSelectionHex.1sc</filename>
+  <version>1.1</version>
+  <authors>yoggy</authors>
+  <description>Similar to XORSelection.1sc but you can enter the XOR key in HEX style.</description>
+  <category>Binary</category>
+  <hash>858ce50fa3b7a26cf2c842265ad70697f2f5ae00</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</script>
+<template>
+  <id>64</id>
+  <filename>AndroidManifest.bt</filename>
+  <version>1.1</version>
+  <authors>dongmu</authors>
+  <description>Define a template for parsing AndroidManifest.xml binary files.</description>
+  <category>Operating System</category>
+  <filemask>AndroidManifest.xml</filemask>
+  <idbytes>03 00</idbytes>
+  <hash>7d583bb955b2269f4804525ba7fcb1475d6f8698</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>65</id>
+  <filename>AVI.bt</filename>
+  <version>1.2</version>
+  <authors>Blaine Lefebvre [bl], Elias Bachaalany [eb]</authors>
+  <description>Parse an AVI movie file.</description>
+  <category>Video</category>
+  <filemask>*.avi</filemask>
+  <idbytes>52 49 46 46 [+4] 41 56 49 20 //RIFF????AVI</idbytes>
+  <hash>652af4f0015a56aaa0cafb25380c96855cc9b091</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission, added coloring for header.</comment>
+</template>
+<template>
+  <id>66</id>
+  <filename>BaseMedia.bt</filename>
+  <version>1.1</version>
+  <authors>@RReverser</authors>
+  <description>Parse ISO Base Media File Format files (QuickTime, JPEG2000, MPEG-4, etc.). See also the MP4.bt template.</description>
+  <category>Video</category>
+  <hash>4c4c1865c8b46a5b7064e9e7471401d2c7cce6b7</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission, renamed file.</comment>
+</template>
+<template>
+  <id>67</id>
+  <filename>CAB.bt</filename>
+  <version>0.3</version>
+  <authors>Alex McDonnell</authors>
+  <description>Template for Microsoft cabinet format files.</description>
+  <category>Archive</category>
+  <filemask>*.cab</filemask>
+  <idbytes>4D 53 43 46 //MSCF</idbytes>
+  <hash>f836a8013bd20a0b3c4bf41f50c0ed539bb95222</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission, added coloring for header, removed some warnings.</comment>
+</template>
+<template>
+  <id>68</id>
+  <filename>CAP.bt</filename>
+  <version>1.1</version>
+  <authors>Agus Purwanto</authors>
+  <description>Parse java card CAP file with bytecode disassembler (Java Card 2.2.2 specs compliance).</description>
+  <category>Programming</category>
+  <filemask>*.cap</filemask>
+  <idbytes>50 4B</idbytes>
+  <hash>3ee5d8f5f992fc7b4ce7f6d337c503b99038efaa</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>69</id>
+  <filename>CDA.bt</filename>
+  <version>0.2</version>
+  <authors>Szabolcs Dávid</authors>
+  <description>Simple CDA file template to read Audio CD header information.</description>
+  <category>Audio</category>
+  <filemask>*.cda</filemask>
+  <idbytes>52 49 46 46 [+4] 43 44 44 41 //RIFF????CDDA</idbytes>
+  <hash>94059faf74d87e4888d63fafe2a3a1792b7ee295</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>70</id>
+  <filename>CLASS.bt</filename>
+  <version>1.2</version>
+  <authors>Kevin O. Grover</authors>
+  <description>Parse Java Class (JVM) files.</description>
+  <category>Programming</category>
+  <filemask>*.class</filemask>
+  <idbytes>CA FE BA BE</idbytes>
+  <hash>47b8d4b64434a0422b8c9eafe80c9bd17f6bc41d</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>71</id>
+  <filename>CLASSAdv.bt</filename>
+  <version>1.1</version>
+  <authors>Pishchik Ilya L. (RUS)</authors>
+  <description>A template for parsing Java Class (JVM) Files. Includes visualizing bytecode.</description>
+  <category>Programming</category>
+  <filemask>*.class</filemask>
+  <idbytes>CA FE BA BE</idbytes>
+  <hash>ee5732540d7bdd519a07bbf94ee955b5afa69c6c</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>72</id>
+  <filename>CRX.bt</filename>
+  <version>1.1</version>
+  <authors>G Beier</authors>
+  <description>Template for packaged Google Chrome extensions. Basically a copy of ZIP.bt with extra bits for Google Chrome extensions.</description>
+  <category>Software</category>
+  <filemask>*.crx</filemask>
+  <idbytes>43 72 32 34 //Cr24</idbytes>
+  <hash>2eed6b09fb4e297b622ec661d5d9749c23226a99</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>73</id>
+  <filename>DBF.bt</filename>
+  <version>0.2</version>
+  <authors>A Norman</authors>
+  <description>Parses .dbf (database) format files.</description>
+  <category>Database</category>
+  <filemask>*.dbf</filemask>
+  <hash>97f9c09a6c72f372b51ffad79471584a90928ab3</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>74</id>
+  <filename>DEX.bt</filename>
+  <version>1.1</version>
+  <authors>Jon Larimer</authors>
+  <description>A template for analyzing Dalvik VM (Android) DEX files.</description>
+  <category>Operating System</category>
+  <filemask>*.dex</filemask>
+  <idbytes>64 65 78 0A, 64 65 79 0A //dex\n,dey\n</idbytes>
+  <hash>4b7a93f93d59c493e86e1fac3587383c78890029</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>75</id>
+  <filename>DMP.bt</filename>
+  <version>1.1</version>
+  <authors>A Schuster</authors>
+  <description>Template to parse the header of a Microsoft memory dump file (DMP) as produced by the debugger and kernel crashdump facility.</description>
+  <category>Operating System</category>
+  <filemask>*.dmp</filemask>
+  <idbytes>4D 44 4D 50, 50 41 47 45 // MDMP, PAGE</idbytes>
+  <hash>aa4d6398005930ce6d20ed86ffe607d3c2ae92e0</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>76</id>
+  <filename>EDID.bt</filename>
+  <version>1.1</version>
+  <authors>Rafael Vuijk</authors>
+  <description>Template for EDID files (Extended display identification data).</description>
+  <category>Electronics</category>
+  <filemask>edid.bin,*.edid</filemask>
+  <idbytes>00 FF FF FF FF FF FF 00</idbytes>
+  <hash>1ee68c7b0884c5f83db7e64996be041283816719</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>77</id>
+  <filename>ELF.bt</filename>
+  <version>2.3</version>
+  <authors>Anon, Tim "diff" Strazzere</authors>
+  <description>Decode the ELF format for both 32/64 bit in big/little endian, decode the elf, program, and section headers. Also decode the dynamic symbol table entries. Many fields implement custom viewers but do not handle writing from those views.</description>
+  <category>Executable</category>
+  <filemask>*</filemask>
+  <idbytes>7F 45 4C 46</idbytes>
+  <hash>7d033d9f22011ac40e3f722a3df57c91a0c82d74</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>78</id>
+  <filename>ElTorito.bt</filename>
+  <version>1.1</version>
+  <authors>A Kochkov</authors>
+  <description>View the file system headers in an El Torito bootable cd image.</description>
+  <category>Drives</category>
+  <hash>53538f75d97965bf439450e32c789e0d4c9d65a2</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>79</id>
+  <filename>EMF.bt</filename>
+  <version>0.2</version>
+  <authors>Dustin D. Trammell</authors>
+  <description>Enhanced Metafile Format (EMF) template.</description>
+  <category>Image</category>
+  <filemask>*.emf</filemask>
+  <idbytes>01 00 00 00</idbytes>
+  <hash>91c38033695b7e6975ed7514eeb05bcffb18609c</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>80</id>
+  <filename>EOT.bt</filename>
+  <version>1.1</version>
+  <authors>Neo (Jiepeng) Tan</authors>
+  <description>Template for parsing the Embedded OpenType (EOT) font file format.</description>
+  <category>Font</category>
+  <filemask>*.eot</filemask>
+  <hash>9c285a42aa7e606b44d09984f727173568de23cb</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>81</id>
+  <filename>EVSB.bt</filename>
+  <version>1.1</version>
+  <authors>Kip Leitner, Panasonic</authors>
+  <description>Decomposes Video Symbol Stream Files for E-8VSB modulation as per ATSC Digital Television Standard (A/53).</description>
+  <category>Electronics</category>
+  <hash>7bd80560792d3769b697c0a7aa6f8a205d8bb41c</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>82</id>
+  <filename>EXE.bt</filename>
+  <version>0.1</version>
+  <authors>xSpy, Peter Kankowski, SweetScape Software</authors>
+  <description>Parse Windows executable exe, dll, and sys files. Supports 32 and 64 bit.</description>
+  <category>Executable</category>
+  <filemask>*.exe,*.dll,*.sys</filemask>
+  <idbytes>4D 5A //MZ</idbytes>
+  <hash>0954bfd9f2f95f6754a0f9bffb1b919e07b908c8</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Merged changes from PETemplate.bt and EXETemplate2.bt and renamed to this file. Added some coloring and rearranged for readability. Update header for repository submission.</comment>
+</template>
+<template>
+  <id>83</id>
+  <filename>FLV.bt</filename>
+  <version>2.2</version>
+  <authors>lafei</authors>
+  <description>Template for Flash Video (FLV) files.</description>
+  <category>Video</category>
+  <filemask>*.flv</filemask>
+  <idbytes>46 4C 56 //FLV</idbytes>
+  <hash>94a55ee71c22bdba8fb640e43160380ba8605e9f</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>84</id>
+  <filename>GIF.bt</filename>
+  <version>1.3</version>
+  <authors>Berend-Jan "SkyLined" Wever</authors>
+  <description>Defines a template for parsing GIF image files.</description>
+  <category>Image</category>
+  <filemask>*.gif</filemask>
+  <idbytes>47 49 46 //GIF</idbytes>
+  <hash>d2607692c2c57651581e7a27e2bc4e2e75f89752</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>85</id>
+  <filename>Goclever.bt</filename>
+  <version>1.1</version>
+  <authors>Artur Babecki</authors>
+  <description>Template for the GOCLEVER GPS Navigation log format GPSLogYYYY-MM-DD_xx-xx-xx.bin (Model GC-4335 and others). Generates report in the human readable form: Date, Longitude, Latitude, Geoid, Altitude, Direction.</description>
+  <category>Electronics</category>
+  <filemask>GPSLog*.bin</filemask>
+  <hash>7141bdceadc53aef74a2032e59375e1e7e83ed0a</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>86</id>
+  <filename>GZip.bt</filename>
+  <version>1.3</version>
+  <authors>Tim "diff" Strazzere</authors>
+  <description>Quick template for parsing GZip data/files.</description>
+  <category>Archive</category>
+  <filemask>*.gz,*.tgz</filemask>
+  <idbytes>1F 8B</idbytes>
+  <hash>bf908784e5b9449b4eb0dde2b4e8dd4d2ddbf6ac</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission, added open attribute.</comment>
+</template>
+<template>
+  <id>87</id>
+  <filename>ICO.bt</filename>
+  <version>1.1</version>
+  <authors>Amotz Getzov</authors>
+  <description>Defines a template for parsing icon image files.</description>
+  <category>Image</category>
+  <filemask>*.ico</filemask>
+  <idbytes>00 00 01 00</idbytes>
+  <hash>bd84caf791b7b8f8c3f22e7254768b65e0d04d42</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>88</id>
+  <filename>InspectorDates.bt</filename>
+  <version>1.1</version>
+  <authors>SweetScape Software</authors>
+  <description>Demonstrates how to add a series of dates to the Auto Inspector. Includes: WebkitTime (64-bit int, microseconds since 01/01/1601), HFSTime (32-bit int, seconds since 01/01/1904), AppleTime (32-bit int, seconds since 01/01/2001), PRTime (64-bit int, microseconds since 01/01/1970), JavaTime (64-bit int, microseconds since 01/01/1970), GPSTime (32-bit int, seconds since 01/06/1980), BlackberryDate (32-bit int, minutes since 01/01/1900).</description>
+  <category>Inspector</category>
+  <hash>5d1130469bdeee8ce56dce25ef672ba41dd46d1f</hash>
+  <requiresversion>4</requiresversion>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>89</id>
+  <filename>InspectorWithMP4DateTime.bt</filename>
+  <version>1.3</version>
+  <authors>SweetScape Software, Marian Denes</authors>
+  <description>Adds MP4_Time to the Inspector template. This template may be used to customize the auto tab of the Inspector with your own variables. See the Inspector section of the Options dialog for more information.</description>
+  <category>Inspector</category>
+  <hash>4b97beb7070a7e41d14e1ca2643208d84935639e</hash>
+  <requiresversion>4</requiresversion>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>90</id>
+  <filename>ISO.bt</filename>
+  <version>0.2</version>
+  <authors>Anton Kochkov</authors>
+  <description>Parse the file system headers for ISO disk images.</description>
+  <category>Drives</category>
+  <filemask>*.iso</filemask>
+  <hash>f2f888f6dd4591c516b4233ff91ec5e0d40b1785</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>91</id>
+  <filename>JPG.bt</filename>
+  <version>1.4</version>
+  <authors>Mor FTP</authors>
+  <description>Template for JPG image files.</description>
+  <category>Image</category>
+  <filemask>*.jpg,*.jpeg</filemask>
+  <idbytes>FF D8 FF</idbytes>
+  <hash>ceadcc29d1bfe9f14c0eead6da9b5ec71a675a6e</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission, added open attribute.</comment>
+</template>
+<template>
+  <id>92</id>
+  <filename>LNK.bt</filename>
+  <version>0.1</version>
+  <authors>Didier Stevens</authors>
+  <description>View data in a Microsoft shortcut (LNK) file.</description>
+  <category>Operating System</category>
+  <filemask>*.lnk</filemask>
+  <idbytes>4C 00 00 00 01 14 02 00</idbytes>
+  <hash>af963086c396fdd3b2ab386061c750a4493fbd6f</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission, added read function for StringData.</comment>
+</template>
+<template>
+  <id>93</id>
+  <filename>LUKS.bt</filename>
+  <version>1.1</version>
+  <authors>Daniel Correa</authors>
+  <description>Template for LUKS (Linux Unified Key Setup) hard disk encryption.</description>
+  <category>Drives</category>
+  <filemask>*</filemask>
+  <idbytes>4C 55 4B 53 BA BE //LUKS\xBA\xBE</idbytes>
+  <hash>d53e5a8a0152a6f9577a3fb9162bc6b9b3cb2fea</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>94</id>
+  <filename>MachO.bt</filename>
+  <version>1.2</version>
+  <authors>Tim "diff" Strazzere</authors>
+  <description>Quick template for parsing Mach-o binaries, including Mac OS X executables, .o and .dylib files.</description>
+  <category>Executable</category>
+  <filemask>*,*.o,*.dylib</filemask>
+  <idbytes>CF FA ED FE, CE FA ED FE, BE BA FE CA, CA FE BA BE</idbytes>
+  <hash>31d50342e20b3f7a9471bfae3cf9cd8644070413</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>95</id>
+  <filename>MIDI.bt</filename>
+  <version>1.1</version>
+  <authors>Jack Andersen</authors>
+  <description>General MIDI sound file template. Complete with delta-time and BPM evaluation into local variables.</description>
+  <category>Audio</category>
+  <filemask>*.mid</filemask>
+  <idbytes>4D 54 68 64 //MThd</idbytes>
+  <hash>8ef7908375c2deda765b8d53d436330bd9181e9c</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>96</id>
+  <filename>Mifare1k.bt</filename>
+  <version>1.1</version>
+  <authors>Ruben Boonen (b33f)</authors>
+  <description>Mifare Classic 1k Structure parsing. Commonly used in smart cards.</description>
+  <category>Electronics</category>
+  <hash>514ea97699083f3ded2a391b16a5ea167abc8434</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>97</id>
+  <filename>Mifare4k.bt</filename>
+  <version>1.1</version>
+  <authors>Ruben Boonen (b33f)</authors>
+  <description>Mifare Classic 4k Structure parsing. Commonly used in smart cards.</description>
+  <category>Electronics</category>
+  <hash>7f971f29732685065f0492f8ede02b6dab39068a</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>98</id>
+  <filename>MOBI.bt</filename>
+  <version>2.3</version>
+  <authors>David W. Deley</authors>
+  <description>Parse Amazon Kindle ebook mobipocket file formats .mobi, .azw, .prc.</description>
+  <category>Document</category>
+  <filemask>*.mobi,*.azw,*.prc</filemask>
+  <idbytes>[+60]42 4F 4F 4B, [+60]54 45 58 74 //BOOK,TEXt</idbytes>
+  <hash>169cbfa02091111f9d5a1a90a83e5ab5ef819c27</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>99</id>
+  <filename>MP3.bt</filename>
+  <version>1.1</version>
+  <authors>Ivan Getta</authors>
+  <description>Parse an MP3 music file.</description>
+  <category>Audio</category>
+  <filemask>*.mp3</filemask>
+  <idbytes>49 44 33, FF</idbytes>
+  <hash>e8ea6311083094af6a73d670811ee644d6f10caa</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>100</id>
+  <filename>MP4.bt</filename>
+  <version>2.2</version>
+  <authors>Marian Denes</authors>
+  <description>Defines a template for parsing MP4 and MOV video files.</description>
+  <category>Video</category>
+  <filemask>*.mp4,*.mov,*.m4v</filemask>
+  <idbytes>[+4] 66 74 79 70, [+4] 6D 6F 6F 76, [+4] 6D 64 61 74</idbytes>
+  <hash>13af26f6c71a271a5b3eb8ebf6c07bff977702da</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>101</id>
+  <filename>NetflowVersion5.bt</filename>
+  <version>1.1</version>
+  <authors>Andrew Faust</authors>
+  <description>Parses Cisco's Netflow Version 5 format.</description>
+  <category>Network</category>
+  <hash>4cf29d4baddf33215bd496936f46adb2e92ece14</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>102</id>
+  <filename>OGG.bt</filename>
+  <version>1.1</version>
+  <authors>George Woods</authors>
+  <description>Parses the ogg container format.</description>
+  <category>Audio</category>
+  <filemask>*.ogg,*.oga,*.ogv,*.ogx</filemask>
+  <idbytes>4F 67 67 53 //OggS</idbytes>
+  <hash>6181e071ab20d69b36a5c4edf6f39c92094dabfc</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>103</id>
+  <filename>OrCAD_LIB.bt</filename>
+  <version>1.3</version>
+  <authors>L. Potjewijd</authors>
+  <description>Analyse OrCad 3.20a library files.</description>
+  <category>CAD</category>
+  <filemask>*.lib</filemask>
+  <idbytes>4C 49 42 52 41 52 59 20 4F 42 4A 45 43 54 //LIBRARY OBJECT</idbytes>
+  <hash>0d2e57e05a17b317aee8baa87747193d51c6ee80</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>104</id>
+  <filename>OrCAD_SCH.bt</filename>
+  <version>1.3</version>
+  <authors>L. Potjewijd</authors>
+  <description>Analyse drawings and blocks from OrCad 3.20a programs.</description>
+  <category>CAD</category>
+  <filemask>*.sch</filemask>
+  <idbytes>53 63 68 65 6D 61 74 69 63 20 46 49 4C 45 //Schematic FILE</idbytes>
+  <hash>d51404a73c6115b91f825fc4fd50e0a820afc96c</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>105</id>
+  <filename>OscarItem.bt</filename>
+  <version>1.1</version>
+  <authors>S Reno</authors>
+  <description>Template for binary journal file used in AppleOne POS.</description>
+  <category>Electronics</category>
+  <hash>7d7ad7a01cb86bb3ce38be1782e79ecc549b4db2</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>106</id>
+  <filename>PAL.bt</filename>
+  <version>1.2</version>
+  <authors>SweetScape Software</authors>
+  <description>Parses a Microsoft PAL palette file.</description>
+  <category>Image</category>
+  <filemask>*.pal</filemask>
+  <idbytes>52 49 46 46 [+4] 50 41 4C 20 //RIFF????PAL</idbytes>
+  <hash>6fd2e44552afa3a978f644fc905f947118b2998b</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>107</id>
+  <filename>PCAP.bt</filename>
+  <version>0.2</version>
+  <authors>Didier Stevens</authors>
+  <description>Parse a PCAP network capture file.</description>
+  <category>Network</category>
+  <filemask>*.pcap</filemask>
+  <idbytes>D4 C3 B2 A1</idbytes>
+  <hash>373cf8e929cc89af2129df59f2edae76858ba0ac</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>108</id>
+  <filename>PCX.bt</filename>
+  <version>0.2</version>
+  <authors>James Newton</authors>
+  <description>Parse a PCX bitmap header.</description>
+  <category>Image</category>
+  <filemask>*.pcx</filemask>
+  <idbytes>0A [+1] 01</idbytes>
+  <hash>7faa4bb8685bae416c968b6b6582d73586190f8b</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>109</id>
+  <filename>PDF.bt</filename>
+  <version>0.1</version>
+  <authors>Didier Stevens</authors>
+  <description>Template for Adobe PDF (Portable Document Format) files.</description>
+  <category>Document</category>
+  <filemask>*.pdf</filemask>
+  <idbytes>25 50 44 46 //%PDF</idbytes>
+  <hash>2862e175baef6b8322c71018f2aa674ca267f70b</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>110</id>
+  <filename>PNG.bt</filename>
+  <version>2.0</version>
+  <authors>Kevin O. Grover, RCS</authors>
+  <description>Parse a PNG (Portable Network Graphics) image file.</description>
+  <category>Image</category>
+  <filemask>*.png</filemask>
+  <idbytes>89 50 4E 47 //%PNG</idbytes>
+  <hash>468302b754210bd28349b64ddbeff68eb573fb66</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Merged in extra chunks from PNG12Template.bt, updated header for repository submission.</comment>
+</template>
+<template>
+  <id>111</id>
+  <filename>PSF.bt</filename>
+  <version>1.1</version>
+  <authors>Boris Mazic</authors>
+  <description>Parses a WSUS PSF (Patch Storage File) file.</description>
+  <category>Operating System</category>
+  <filemask>*.psf</filemask>
+  <idbytes>50 53 54 52 45 41 4D 00</idbytes>
+  <hash>d7a96f4fcbf441350d5473f0cd3df059d362324b</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>112</id>
+  <filename>PYC.bt</filename>
+  <version>1.1</version>
+  <authors>Kuang-che Wu</authors>
+  <description>Parse python bytecode .pyc and .pyo files, support python 2.4 to 2.7.</description>
+  <category>Programming</category>
+  <filemask>*.pyc,*.pyo</filemask>
+  <hash>78dc613ec2a7c76befd3115efbc6e34874dc12aa</hash>
+  <date>2016-02-19</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>113</id>
+  <filename>RAR.bt</filename>
+  <version>7.1</version>
+  <authors>Alexander Sherman</authors>
+  <description>Parse RAR archives including 2.x, 3.x and SFX RAR files.</description>
+  <category>Archive</category>
+  <filemask>*.rar</filemask>
+  <idbytes>52 61 72 21 1A 07</idbytes>
+  <hash>c628b1255b4570a616d953b68ed3b79e73e86d16</hash>
+  <date>2016-02-20</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>114</id>
+  <filename>RDB.bt</filename>
+  <version>1.1</version>
+  <authors>AnTler</authors>
+  <description>Defines a template for parsing QQ's RDB files.</description>
+  <category>Misc</category>
+  <hash>b4b26483b26b8f01d5a9567b3c14d6f7ea3274c9</hash>
+  <date>2016-02-20</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>115</id>
+  <filename>RegistryHive.bt</filename>
+  <version>1.3</version>
+  <authors>Eric R. Zimmerman</authors>
+  <description>Parses Windows Registry hive structures. Includes Header, nk, vk, sk, and list records. Data node records are skipped.</description>
+  <category>Operating System</category>
+  <filemask>*</filemask>
+  <idbytes>72 65 67 66 //regf</idbytes>
+  <hash>5f84adbcb7c4ccaaa6637871c0335aa9039d2eb7</hash>
+  <date>2016-02-20</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>116</id>
+  <filename>RegistryPolicyFile.bt</filename>
+  <version>1.1</version>
+  <authors>Blake Frantz</authors>
+  <description>Template for Windows registry policy files (registry.pol).</description>
+  <category>Operating System</category>
+  <filemask>registry.pol</filemask>
+  <idbytes>50 52 65 67</idbytes>
+  <hash>4a181d1506abe6c3b20bbc1293770872a44d25f3</hash>
+  <date>2016-02-20</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>117</id>
+  <filename>RES.bt</filename>
+  <version>1.1</version>
+  <authors>Sergey Evtushenko</authors>
+  <description>Parses resources structure of a RES file or a PE file with the .rsrc section.</description>
+  <category>Programming</category>
+  <filemask>*.res</filemask>
+  <hash>63198990918b610115d52896a854883bc6715547</hash>
+  <date>2016-02-20</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>118</id>
+  <filename>ROMFS.bt</filename>
+  <version>0.3</version>
+  <authors>Jordan Milne</authors>
+  <description>Template for parsing and reverse engineering RomFS images used in embedded devices.</description>
+  <category>Drives</category>
+  <filemask>*</filemask>
+  <idbytes>2D 72 6F 6D 31 66 73 2D //-rom1fs-</idbytes>
+  <hash>927dc696904813341052a72636dcbb46ed9a6668</hash>
+  <requiresversion>4.0</requiresversion>
+  <date>2016-02-20</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>119</id>
+  <filename>SHP.bt</filename>
+  <version>1.1</version>
+  <authors>A Norman</authors>
+  <description>Parses ESRI shp files.</description>
+  <category>GIS</category>
+  <filemask>*.shp</filemask>
+  <hash>18bfc8d01c810406958889f091684efd013dd706</hash>
+  <date>2016-02-20</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission, fixed reading records to the end of the file.</comment>
+</template>
+<template>
+  <id>120</id>
+  <filename>SHX.bt</filename>
+  <version>1.1</version>
+  <authors>A Norman</authors>
+  <description>Parses ESRI shx files.</description>
+  <category>GIS</category>
+  <filemask>*.shx</filemask>
+  <hash>899c35d765246c9e1ea93868fd6dbb1f1b1d8be9</hash>
+  <date>2016-02-20</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>121</id>
+  <filename>SinclairMicrodrive.bt</filename>
+  <version>1.1</version>
+  <authors>J Pass</authors>
+  <description>Defines a template for parsing images of emulated Sinclair Microdrive cartridges.</description>
+  <category>Drives</category>
+  <hash>027919d86647e31a601375012d877e60a54c0203</hash>
+  <date>2016-02-20</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>122</id>
+  <filename>SRec.bt</filename>
+  <version>1.1</version>
+  <authors>Mario Ghecea</authors>
+  <description>Motorola S-REC format template. This should work with the S-REC formats based on S1-S9.</description>
+  <category>Electronics</category>
+  <filemask>*.s37,*.s28,*.s19</filemask>
+  <idbytes>53 30 //S0</idbytes>
+  <hash>6b7c632ab8f499cd628e843819625582f77b58b7</hash>
+  <date>2016-02-20</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Added some coloring, handle different linefeeds, custom read function and updated header for repository submission.</comment>
+</template>
+<template>
+  <id>123</id>
+  <filename>SSP.bt</filename>
+  <version>0.2</version>
+  <authors>ThangCuAnh (TQN) - HVA</authors>
+  <description>Define a template for parsing SmartSniff Packet files.</description>
+  <category>Network</category>
+  <filemask>*.ssp</filemask>
+  <idbytes>53 4D 53 4E 46 32 30 30 //SMSNF200</idbytes>
+  <hash>76c2a5fb4269b7ea985136f3dcbc2dd843b73cd3</hash>
+  <date>2016-02-20</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>124</id>
+  <filename>STL.bt</filename>
+  <version>1.3</version>
+  <authors>ZiZi</authors>
+  <description>Parse an STL binary file containing 3D geometry (CAD).</description>
+  <category>CAD</category>
+  <filemask>*.stl</filemask>
+  <hash>c5766d3264532f61240055491a6b5a3bf0dacaad</hash>
+  <date>2016-02-20</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>126</id>
+  <filename>Tacx.bt</filename>
+  <version>1.1</version>
+  <authors>Nestor Matas</authors>
+  <description>Template for all the Tacx Fortius cycling training software file formats, including pgmf, caf, imf, rlv and mrlv.</description>
+  <category>Misc</category>
+  <filemask>*.pgmf</filemask>
+  <idbytes>A0 0F, B8 0B, D0 07, E8 03 //4000,3000,2000,1000</idbytes>
+  <hash>a048869d520816669bae502e70a2d6614334437e</hash>
+  <date>2016-02-20</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>127</id>
+  <filename>TGA.bt</filename>
+  <version>1.1</version>
+  <authors>Chiuta Adrian Marius</authors>
+  <description>Shows the fields of a TGA image.</description>
+  <category>Image</category>
+  <filemask>*.tga</filemask>
+  <hash>29dec2d9e6c9b913f907d5dfcfc8df6cd3a915b9</hash>
+  <date>2016-02-20</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>128</id>
+  <filename>WinhexPos.bt</filename>
+  <version>1.1</version>
+  <authors>Artur Babecki</authors>
+  <description>The WinHex (editor by X-Ways Software Technology AG) stores the find results in the winhex.pos file. This template parses its structure and allows to build a script to convert WinHex results into a set of bookmarks for 010Editor.</description>
+  <category>Software</category>
+  <filemask>winhex.pos</filemask>
+  <hash>4d97471112009cf03ab25a55a5521fd3102b4d1e</hash>
+  <date>2016-02-20</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>129</id>
+  <filename>TIF.bt</filename>
+  <version>1.7</version>
+  <authors>Kevin O. Grover</authors>
+  <description>A template for parsing TIFF (Tagged Image File Format) files. Also now handles GeoTIFF files.</description>
+  <category>Image</category>
+  <filemask>*.tif,*.tiff</filemask>
+  <idbytes>49 49 2A 00, 4D 4D 00 2A</idbytes>
+  <hash>06e4c3c685e4c3993cd4c0acc4cc9f1e79f547cc</hash>
+  <date>2016-02-20</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>130</id>
+  <filename>TOC.bt</filename>
+  <version>1.3</version>
+  <authors>L. Potjewijd</authors>
+  <description>Template to make sense of, and modifications to, Eudora 7.* (possible older versions too) mailbox index files (.toc).</description>
+  <category>Software</category>
+  <filemask>*.toc</filemask>
+  <hash>73509e74b5963f2f07ccac31bd2031e4f3dfb455</hash>
+  <date>2016-02-20</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>131</id>
+  <filename>TTF.bt</filename>
+  <version>0.6</version>
+  <authors>James Newton of massmind.org</authors>
+  <description>Template to parse TTF (TrueType) fonts.</description>
+  <category>Font</category>
+  <filemask>*.ttf</filemask>
+  <idbytes>00 01 00 00 00</idbytes>
+  <hash>846ea28749c9a167a3cbd1d7997e36401cf08859</hash>
+  <date>2016-02-20</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>132</id>
+  <filename>UTMP.bt</filename>
+  <version>0.2</version>
+  <authors>Matthew Geiger</authors>
+  <description>Interpret entries in utmp and wtmp login log files on *nix systems.</description>
+  <category>Operating System</category>
+  <filemask>utmp,wtmp</filemask>
+  <hash>f052da04c9d74ea74df4af81497f2c47a759b856</hash>
+  <date>2016-02-20</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>134</id>
+  <filename>WAVAdv.bt</filename>
+  <version>1.1</version>
+  <authors>SweetScape Software plus submissions</authors>
+  <description>Defines an advanced template for parsing WAV audio files. Includes SMPL chunk parsing (Parsing wav files that contains Sustain Loops. Useful for Game Developers).</description>
+  <category>Audio</category>
+  <filemask>*.wav</filemask>
+  <idbytes>52 49 46 46 [+4] 57 41 56 45 //RIFF????WAVE</idbytes>
+  <hash>cb81c8381c807bf44b0f4d09e1f907c8ad593956</hash>
+  <date>2016-02-20</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>135</id>
+  <filename>WMF.bt</filename>
+  <version>0.4</version>
+  <authors>Didier Stevens</authors>
+  <description>Parse the Windows Metafile (WMF) graphics file format.</description>
+  <category>Image</category>
+  <filemask>*.wmf</filemask>
+  <idbytes>D7 CD C6 9A</idbytes>
+  <hash>f28a57e90fdcd37551103117da60701fa5049fb7</hash>
+  <date>2016-02-20</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission, added coloring for header, removed some warnings.</comment>
+</template>
+<template>
+  <id>136</id>
+  <filename>ZIPAdv.bt</filename>
+  <version>2.6</version>
+  <authors>SweetScape Software</authors>
+  <description>Defines a template for parsing ZIP files. Handles more complex ZIP data such as ZIP64 that the base ZIP.bt cannot read.</description>
+  <category>Archive</category>
+  <filemask>*.zip</filemask>
+  <idbytes>50 4B //PK</idbytes>
+  <hash>87dfb3b1f3609a48ab24bc259f43b889e7034e0d</hash>
+  <date>2016-02-20</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>137</id>
+  <filename>VHD.bt</filename>
+  <version>1.1</version>
+  <authors>lurker0ster</authors>
+  <description>Microsoft VHD virtual disk format parser.</description>
+  <category>Drives</category>
+  <filemask>*.vhd</filemask>
+  <hash>abc5fc56e09eb4774bc167e2c2441ffdf7682513</hash>
+  <date>2016-02-22</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>138</id>
+  <filename>SWF.bt</filename>
+  <version>1.3</version>
+  <authors>Josh Zelonis</authors>
+  <description>Defines a template for parsing Adobe Flash SWF files based on the file format specification for Flash 9.</description>
+  <category>Internet</category>
+  <filemask>*.swf</filemask>
+  <idbytes>43 57 53, 46 57 53 //CWS, FWS</idbytes>
+  <hash>d6982da46c65ea1fd00218759ea265ad4d11a153</hash>
+  <date>2016-02-22</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>139</id>
+  <filename>SF2.bt</filename>
+  <version>1.1</version>
+  <authors>gocha</authors>
+  <description>Defines a template for SF2 (SoundFont 2.04) files.</description>
+  <category>Audio</category>
+  <filemask>*.sf2</filemask>
+  <idbytes>52 49 46 46 [+4] 73 66 62 6B //RIFF????sfbk</idbytes>
+  <hash>79ca67f2f5e72fa44672609ae10a4fca3fe65d65</hash>
+  <date>2016-02-22</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission.</comment>
+</template>
+<template>
+  <id>140</id>
+  <filename>RIFF.bt</filename>
+  <version>1.1</version>
+  <authors>gocha</authors>
+  <description>Defines a template for generic RIFF files.</description>
+  <category>Misc</category>
+  <idbytes>52 49 46 46 //RIFF</idbytes>
+  <hash>16e2a2d9f70821fd50cb7783e0ef4649ad288263</hash>
+  <date>2016-02-22</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Updated header for repository submission, added read function.</comment>
+</template>
+<template>
+  <id>141</id>
+  <filename>BMP.bt</filename>
+  <version>2.3</version>
+  <updatesversion>2.2</updatesversion>
+  <authors>SweetScape Software</authors>
+  <description>Parse BMP image files.</description>
+  <category>Image</category>
+  <filemask>*.bmp</filemask>
+  <idbytes>42 4D //BM</idbytes>
+  <hash>0ac87db01fe4be24e50d59f5930abee1faaae158</hash>
+  <diffhash>4a0f1c559b64c7bcace6994a11a43a0de1a8a7ed</diffhash>
+  <date>2016-02-26</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Allow negative heights.</comment>
+</template>
+<template>
+  <id>142</id>
+  <filename>SF2.bt</filename>
+  <version>1.2</version>
+  <updatesversion>1.1</updatesversion>
+  <authors>gocha</authors>
+  <description>Defines a template for SF2 (SoundFont 2.04) files.</description>
+  <category>Audio</category>
+  <filemask>*.sf2</filemask>
+  <idbytes>52 49 46 46 [+4] 73 66 62 6B //RIFF????sfbk</idbytes>
+  <hash>6b8d814bdc37406d177b3618a5efb7174237faec</hash>
+  <diffhash>c7e8060e447dcfb173f53919491aee9c77d15644</diffhash>
+  <date>2016-03-07</date>
+  <changeauthor>gocha</changeauthor>
+  <comment>- Update definition of every enum types - Update the type of SFModulator::index for MIDI CC# modulator</comment>
+</template>
+<template>
+  <id>143</id>
+  <filename>EXE.bt</filename>
+  <version>0.2</version>
+  <updatesversion>0.1</updatesversion>
+  <authors>xSpy, Peter Kankowski, SweetScape Software</authors>
+  <description>Parse Windows executable exe, dll, and sys files. Supports 32 and 64 bit.</description>
+  <category>Executable</category>
+  <filemask>*.exe,*.dll,*.sys</filemask>
+  <idbytes>4D 5A //MZ</idbytes>
+  <hash>6eea8752fd093961bfa83cb60f6e15fa78d36e78</hash>
+  <diffhash>b0ba073723be4ce896f0355b8338d9ebdb4c6498</diffhash>
+  <date>2016-03-11</date>
+  <changeauthor>Yann Le Brech</changeauthor>
+  <comment>Added LittleEndian();</comment>
+</template>
+<script>
+  <id>144</id>
+  <filename>DeleteEmptyLines.1sc</filename>
+  <version>1.0</version>
+  <authors>SweetScape Software</authors>
+  <description>Deletes all empty lines in the selection. If no lines are selected all empty lines in the file are deleted.</description>
+  <category>Text</category>
+  <hash>2aeb2f197b985f06839871f17a66ac3ff44ca194</hash>
+  <date>2016-03-15</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Initial release.</comment>
+</script>
+<template>
+  <id>145</id>
+  <filename>ELF.bt</filename>
+  <version>2.5.3</version>
+  <updatesversion>2.3</updatesversion>
+  <authors>Anon, Tim "diff" Strazzere</authors>
+  <description>Decode the ELF format for both 32/64 bit in big/little endian, decode the elf, program, and section headers. Also decode the dynamic symbol table entries. Many fields implement custom viewers but do not handle writing from those views.</description>
+  <category>Executable</category>
+  <filemask>*</filemask>
+  <idbytes>7F 45 4C 46</idbytes>
+  <hash>c82cc963c6246fadd5c907adb499c00e30adffca</hash>
+  <diffhash>5b67f0c5f1f27d33377e3393f131cb6dd8cce49c</diffhash>
+  <date>2016-03-30</date>
+  <changeauthor>T Strazzere</changeauthor>
+  <comment>Merge back into 010Editor "repository" formatting</comment>
+</template>
+<template>
+  <id>146</id>
+  <filename>SquashFS.bt</filename>
+  <version>1.0</version>
+  <authors>Drake Madison</authors>
+  <description>Parses the SquashFS compressed read-only file system for Linux. Currently supports only 3.x files.</description>
+  <category>Archive</category>
+  <filemask>*.sqsh;*.squashfs</filemask>
+  <idbytes>68 73 71 73</idbytes>
+  <hash>3215a03a85f2af0d592a7d83e138e8c61b63111f</hash>
+  <date>2016-03-31</date>
+  <changeauthor>Drake Madison</changeauthor>
+  <comment>Initial release</comment>
+</template>
+<template>
+  <id>147</id>
+  <filename>SCP.bt</filename>
+  <version>0.2</version>
+  <authors>Vasyl Tsvirkunov</authors>
+  <description>SuperCard Pro dump file format based on "official" format document.</description>
+  <category>Misc</category>
+  <filemask>*.scp</filemask>
+  <idbytes>53 43 50 //SCP</idbytes>
+  <hash>5fcf2d25e66eec9917e8a06b2286af1d52abac9e</hash>
+  <date>2016-03-31</date>
+  <changeauthor>Vasyl Tsvirkunov</changeauthor>
+  <comment>Updated for v7 compliancy</comment>
+</template>
+<template>
+  <id>148</id>
+  <filename>KryoFlux.bt</filename>
+  <version>0.2</version>
+  <authors>Vasyl Tsvirkunov</authors>
+  <description>Kryoflux Stream file template.</description>
+  <category>Misc</category>
+  <filemask>*.raw</filemask>
+  <idbytes>0D 04</idbytes>
+  <hash>815318f61797438646425cf7eb3aba6c9b886f51</hash>
+  <date>2016-03-31</date>
+  <changeauthor>Vasyl Tsvirkunov</changeauthor>
+  <comment>Updated for v7 compliancy</comment>
+</template>
+<template>
+  <id>149</id>
+  <filename>EXE.bt</filename>
+  <version>0.3</version>
+  <updatesversion>0.2</updatesversion>
+  <authors>xSpy, Peter Kankowski, SweetScape Software</authors>
+  <description>Parse Windows executable exe, dll, and sys files. Supports 32 and 64 bit.</description>
+  <category>Executable</category>
+  <filemask>*.exe,*.dll,*.sys</filemask>
+  <idbytes>4D 5A //MZ</idbytes>
+  <hash>fff64619a2b07690191ccc9df00ccab0ca7a48bf</hash>
+  <diffhash>e5a09bd136f2ed3094f0b94c5ba76d5a3be7f912</diffhash>
+  <date>2016-03-31</date>
+  <changeauthor>T Strazzere</changeauthor>
+  <comment>Fixed issue with IMAGE_IMPORT_DESCRIPTOR</comment>
+</template>
+<template>
+  <id>150</id>
+  <filename>ELF.bt</filename>
+  <version>2.5.4</version>
+  <updatesversion>2.5.3</updatesversion>
+  <authors>Anon, Tim "diff" Strazzere</authors>
+  <description>Decode the ELF format for both 32/64 bit in big/little endian, decode the elf, program, and section headers. Also decode the dynamic symbol table entries. Many fields implement custom viewers but do not handle writing from those views.</description>
+  <category>Executable</category>
+  <filemask>*</filemask>
+  <idbytes>7F 45 4C 46</idbytes>
+  <hash>9286a342471047472dfbb54ce55ae377b9670888</hash>
+  <diffhash>2318d9e9ae9abb4e391777e39dffbd685cd01fe5</diffhash>
+  <date>2016-04-15</date>
+  <changeauthor>T Strazzere</changeauthor>
+  <comment>Fix overflowing on bad section offset and sizes</comment>
+</template>
+<template>
+  <id>151</id>
+  <filename>SF2.bt</filename>
+  <version>1.3</version>
+  <updatesversion>1.2</updatesversion>
+  <authors>gocha</authors>
+  <description>Defines a template for SF2 (SoundFont 2.04) files.</description>
+  <category>Audio</category>
+  <filemask>*.sf2</filemask>
+  <idbytes>52 49 46 46 [+4] 73 66 62 6B //RIFF????sfbk</idbytes>
+  <hash>9beb3df3584d70ba4067285c04ebcb9bd94f713a</hash>
+  <diffhash>73a35e6e9fd721136152626ed03125a51604ac50</diffhash>
+  <date>2016-05-04</date>
+  <changeauthor>gocha</changeauthor>
+  <comment>- Add missing irom chunk</comment>
+</template>
+<template>
+  <id>152</id>
+  <filename>HiewCMarkers.bt</filename>
+  <version>1.0</version>
+  <authors>Jupiter</authors>
+  <description>Hiew Colour Markers highlighting.</description>
+  <category>Software</category>
+  <filemask>*.cmarkers</filemask>
+  <idbytes>48 69 65 77 43 4D 61 72 6B 65 72 73 //HiewCMarkers</idbytes>
+  <hash>6c3be9be5b15520bfae4c05248263cb37434c411</hash>
+  <requiresversion>6</requiresversion>
+  <date>2016-05-10</date>
+  <changeauthor>Jupiter</changeauthor>
+  <comment>Initial release to support HiewCMarkers format introduced in Hiew 8.32</comment>
+</template>
+<template>
+  <id>153</id>
+  <filename>Drive.bt</filename>
+  <version>1.0</version>
+  <authors>SweetScape Software, Benjamin Vernoux</authors>
+  <description>Parse logical and physical drives including MBR, FAT16, FAT32, NTFS and extended partitions. Can display subdirectories and data for individual files. Note that some NTFS drives may not work properly (see file comments).</description>
+  <category>Drives</category>
+  <filemask>Drive*,Physical*</filemask>
+  <idbytes>[+510] 55 AA</idbytes>
+  <hash>3e1ef0a75f4a9bcba2f2dd42b31048482923b573</hash>
+  <date>2016-05-13</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Added NTFS support, parsing FAT files and subdirectories, extended partitions. Created from original MBRTemplateFAT.bt file with major rework and merged information from other templates.</comment>
+</template>
+<template>
+  <id>154</id>
+  <filename>BSON.bt</filename>
+  <version>0.1</version>
+  <authors>Chris Russell (Gnorizo)</authors>
+  <description>Parse BSON (binary JSON) files, per v1.0 spec at http://bsonspec.org/spec.html. Used by MongoDB et al.</description>
+  <category>Programming</category>
+  <filemask>*.bson</filemask>
+  <hash>61400b7b8e3384e29265d6cb613aeb29b53347cc</hash>
+  <date>2016-05-14</date>
+  <changeauthor>Chris Russell</changeauthor>
+  <comment>Initial release.</comment>
+</template>
+<template>
+  <id>155</id>
+  <filename>RM.bt</filename>
+  <version>1.0</version>
+  <authors>Jian Xu</authors>
+  <description>Defines a template for parsing RM (RealMedia) video files.</description>
+  <category>Video</category>
+  <filemask>*.rm,*.ra,*.rmvb</filemask>
+  <idbytes>2E 52 4D 46 //.RMF</idbytes>
+  <hash>5552d1778a739e027c9d627a197a40172d20af79</hash>
+  <date>2016-05-16</date>
+  <changeauthor>Jian Xu</changeauthor>
+  <comment>Init Commit</comment>
+</template>
+<template>
+  <id>156</id>
+  <filename>MIDI.bt</filename>
+  <version>1.2</version>
+  <updatesversion>1.1</updatesversion>
+  <authors>Jack Andersen</authors>
+  <description>General MIDI sound file template. Complete with delta-time and BPM evaluation into local variables.</description>
+  <category>Audio</category>
+  <filemask>*.mid</filemask>
+  <idbytes>4D 54 68 64 //MThd</idbytes>
+  <hash>b15b1996abf02437dae6caa279b28c564a45093a</hash>
+  <diffhash>b6cdd359f7788a4be37d6f1b834eda7879ae7f36</diffhash>
+  <date>2016-05-18</date>
+  <changeauthor>J Andersen</changeauthor>
+  <comment>Correctly interpret unset status-bit as repeat message.</comment>
+</template>
+<template>
+  <id>157</id>
+  <filename>PDF.bt</filename>
+  <version>0.2</version>
+  <updatesversion>0.1</updatesversion>
+  <authors>Didier Stevens, Christian Mehlmauer</authors>
+  <description>Template for Adobe PDF (Portable Document Format) files.</description>
+  <category>Document</category>
+  <filemask>*.pdf</filemask>
+  <idbytes>25 50 44 46 //%PDF</idbytes>
+  <hash>6a41a435e6ef87044efc0e021fd9b0280a5c7f57</hash>
+  <diffhash>8104d3e2b6e3734e6633d3cb7294e598b9dee7dc</diffhash>
+  <date>2016-05-18</date>
+  <changeauthor>Christian Mehlmauer</changeauthor>
+  <comment>Parsing of XREFs</comment>
+</template>
+<template>
+  <id>158</id>
+  <filename>SytosPlus.bt</filename>
+  <version>1.1</version>
+  <authors>Simon N. Thornton</authors>
+  <description>Decode Sytos Plus Tape Image and (optionally) dump recovered files.</description>
+  <category>Drives</category>
+  <hash>c644a31e84b5f3e02c9b88193fda0d20e01db323</hash>
+  <date>2016-05-20</date>
+  <changeauthor>Simon Thornton</changeauthor>
+  <comment>Minor correction variable names</comment>
+</template>
+<template>
+  <id>159</id>
+  <filename>OPCache.bt</filename>
+  <version>0.1</version>
+  <authors>Ian Bouchard</authors>
+  <description>Parse cache files generated by OPcache for PHP files on an x86 platform.</description>
+  <category>Programming</category>
+  <filemask>*.php.bin</filemask>
+  <idbytes>4F 50 43 41 43 48 45 // OPCACHE</idbytes>
+  <hash>ad25384e08dcd03a2f31c149a8989601bd2992e3</hash>
+  <date>2016-06-08</date>
+  <changeauthor>ib</changeauthor>
+  <comment>Initial release.</comment>
+</template>
+<template>
+  <id>160</id>
+  <filename>MachO.bt</filename>
+  <version>1.3</version>
+  <updatesversion>1.2</updatesversion>
+  <authors>Tim "diff" Strazzere</authors>
+  <description>Quick template for parsing Mach-o binaries, including Mac OS X executables, .o and .dylib files.</description>
+  <category>Executable</category>
+  <filemask>*,*.o,*.dylib</filemask>
+  <idbytes>CF FA ED FE, CE FA ED FE, BE BA FE CA, CA FE BA BE</idbytes>
+  <hash>f266b6d4a94795dd5218bdae9e9080dd6b509a40</hash>
+  <diffhash>6c6412a8e78855fd9baa2a56043c427f771d4615</diffhash>
+  <date>2016-06-09</date>
+  <changeauthor>N Moinvaziri</changeauthor>
+  <comment>Fixed definition of section_64. Offset should have been uint64 and reserved3 missing.</comment>
+</template>
+<template>
+  <id>161</id>
+  <filename>JPG.bt</filename>
+  <version>1.4.1</version>
+  <updatesversion>1.4</updatesversion>
+  <authors>Mor FTP</authors>
+  <description>Template for JPG image files.</description>
+  <category>Image</category>
+  <filemask>*.jpg,*.jpeg</filemask>
+  <idbytes>FF D8 FF</idbytes>
+  <hash>ab53d6e6c95ebc34c843c0c4da736b730d5c16e8</hash>
+  <diffhash>d57bf4670e214cb5a24e29d84c15e0154b218b8d</diffhash>
+  <date>2016-06-13</date>
+  <changeauthor>Bartosz Dziewonski</changeauthor>
+  <comment>Don't fail when parsing IFD where the offset of data for final entry is before the structure offset.</comment>
+</template>
+<template>
+  <id>162</id>
+  <filename>EDID.bt</filename>
+  <version>1.1.1</version>
+  <updatesversion>1.1</updatesversion>
+  <authors>Rafael Vuijk</authors>
+  <description>Template for EDID files (Extended display identification data).</description>
+  <category>Electronics</category>
+  <filemask>edid.bin,*.edid</filemask>
+  <idbytes>00 FF FF FF FF FF FF 00</idbytes>
+  <hash>c9563ea63e82cae5f126f5d3fd4be847aa12e754</hash>
+  <diffhash>518c27910b56a114680c178d4a3bc550cad6c257</diffhash>
+  <date>2016-06-14</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Removed some invalid null characters.</comment>
+</template>
+<template>
+  <id>163</id>
+  <filename>Drive.bt</filename>
+  <version>1.1</version>
+  <updatesversion>1.0</updatesversion>
+  <authors>SweetScape Software, Benjamin Vernoux</authors>
+  <description>Parse logical and physical drives including MBR, FAT16, FAT32, NTFS and extended partitions. Can display subdirectories and data for individual files. Note that some NTFS drives may not work properly (see file comments).</description>
+  <category>Drives</category>
+  <filemask>Drive*,Physical*</filemask>
+  <idbytes>[+510] 55 AA</idbytes>
+  <hash>7bebe919233b35b26d64e9820567b52a21ff043d</hash>
+  <diffhash>cce95d20387553b39cdfbc8435faac2d111576f2</diffhash>
+  <date>2016-06-14</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Added support for EFI partitions.</comment>
+</template>
+<template>
+  <id>164</id>
+  <filename>HFSJournal.bt</filename>
+  <version>1.0</version>
+  <authors>blukat29</authors>
+  <description>Parse an HFS+ (HFS Plus file system) journal file.</description>
+  <category>Operating System</category>
+  <filemask>*.journal</filemask>
+  <idbytes>78 4C 4E 4A</idbytes>
+  <hash>8b06cc72bd1a92966ba450682e1f35dcef28a74b</hash>
+  <date>2016-06-20</date>
+  <changeauthor>blukat29</changeauthor>
+  <comment>Initial version.</comment>
+</template>
+<template>
+  <id>165</id>
+  <filename>Drive.bt</filename>
+  <version>2.0</version>
+  <updatesversion>1.1</updatesversion>
+  <authors>SweetScape Software, Benjamin Vernoux</authors>
+  <description>Parse logical and physical drives including MBR, FAT16, FAT32, HFS, NTFS and extended partitions. Can display subdirectories and data for individual files. Note that some NTFS drives may not work properly (see file comments).</description>
+  <category>Drives</category>
+  <filemask>Drive*,Physical*</filemask>
+  <idbytes>[+510] 55 AA,[+1024] 48 2B,[+1024] 48 58</idbytes>
+  <hash>802827c0e0fbc49b71ec8746e472b5192128eb93</hash>
+  <diffhash>c7b936cb1a0dc26dfcd432c1e208562191fb4eaa</diffhash>
+  <date>2016-07-08</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Added support for HFS drives (macOS/iOS).</comment>
+</template>
+<template>
+  <id>166</id>
+  <filename>AndroidResource.bt</filename>
+  <version>1.0</version>
+  <authors>lichao</authors>
+  <description>Parse AndroidManifest.xml, res/*.xml, and resource.arsc binary files in an Android APK package.</description>
+  <category>Operating System</category>
+  <filemask>*.xml,*.arsc</filemask>
+  <idbytes>03 00, 02 00</idbytes>
+  <hash>4ab7faa11cc6c655dfcfe7b79d004ffad03ad014</hash>
+  <date>2016-07-11</date>
+  <changeauthor>lichao</changeauthor>
+  <comment>Initial release.</comment>
+</template>
+<template>
+  <id>167</id>
+  <filename>CLASS.bt</filename>
+  <version>1.3</version>
+  <updatesversion>1.2</updatesversion>
+  <authors>Kevin O. Grover</authors>
+  <description>Parse Java Class (JVM) files.</description>
+  <category>Programming</category>
+  <filemask>*.class</filemask>
+  <idbytes>CA FE BA BE</idbytes>
+  <hash>93688e06545cd98679ac7d0f716faae668b38a81</hash>
+  <diffhash>73948e5dea1040f2d53acba5b9748b2ded05c23a</diffhash>
+  <date>2016-07-11</date>
+  <changeauthor>T. Strazzere</changeauthor>
+  <comment>Add missing constant types</comment>
+</template>
+<template>
+  <id>168</id>
+  <filename>OpenType.bt</filename>
+  <version>1.0</version>
+  <authors>Dwayne Robinson</authors>
+  <description>Displays hierarchy of an OpenType font. This template can also parse TrueType fonts (TTF).</description>
+  <category>Font</category>
+  <filemask>*.otf</filemask>
+  <idbytes>4F 54 54 4F //OTTO</idbytes>
+  <hash>dee1e325f7c0746edf11d11a4ed85d73cc2548f3</hash>
+  <date>2016-07-28</date>
+  <changeauthor>D.R.</changeauthor>
+  <comment>Initial release.</comment>
+</template>
+<template>
+  <id>169</id>
+  <filename>SHP.bt</filename>
+  <version>1.2</version>
+  <updatesversion>1.1</updatesversion>
+  <authors>A Norman</authors>
+  <description>Parses ESRI shp files.</description>
+  <category>GIS</category>
+  <filemask>*.shp</filemask>
+  <hash>f18f74d6b86c5b6747bb4374fee57481df6ffbb7</hash>
+  <diffhash>defe0acbc0ead72d78fb10f0326665f09cd4fced</diffhash>
+  <date>2016-08-12</date>
+  <changeauthor>M. Nicke</changeauthor>
+  <comment>Updated records for MultiPatchType</comment>
+</template>
+<template>
+  <id>170</id>
+  <filename>LZ4.bt</filename>
+  <version>0.1</version>
+  <authors>Hanno Hugenberg</authors>
+  <description>Template for LZ4 Framing Format.</description>
+  <category>Archive</category>
+  <filemask>*.lz4,*.lz4f</filemask>
+  <idbytes>04 22 4D 18</idbytes>
+  <hash>16f3fb8f7d6ba121568a2a7b7dc8ac02ad8a0ae8</hash>
+  <date>2016-08-15</date>
+  <changeauthor>hh</changeauthor>
+  <comment>Initial release</comment>
+</template>
+<script>
+  <id>171</id>
+  <filename>CSVDeleteColumn.1sc</filename>
+  <version>1.0</version>
+  <authors>SweetScape Software</authors>
+  <description>Deletes one column of data in a CSV file. The column to delete is entered with an input box (1 is the first column).</description>
+  <category>Text</category>
+  <hash>00f9324b6048ba1b3e1c52807eb2fb55d0f0750d</hash>
+  <date>2016-08-15</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Initial release.</comment>
+</script>
+<template>
+  <id>172</id>
+  <filename>JPG.bt</filename>
+  <version>1.5</version>
+  <updatesversion>1.4.1</updatesversion>
+  <authors>Mor FTP</authors>
+  <description>Template for JPG image files.</description>
+  <category>Image</category>
+  <filemask>*.jpg,*.jpeg</filemask>
+  <idbytes>FF D8 FF</idbytes>
+  <hash>46d0a8f1e55586244d921f56554b9d8723816b0f</hash>
+  <diffhash>5d5e8e935559259032f9ff9e0685ba81170c2b8c</diffhash>
+  <date>2016-09-16</date>
+  <changeauthor>Pergamon</changeauthor>
+  <comment>Added Sof3 support and set padded bytes color to silver.</comment>
+</template>
+<template>
+  <id>173</id>
+  <filename>SquashFS.bt</filename>
+  <version>2.0</version>
+  <updatesversion>1.0</updatesversion>
+  <authors>Drake Madison</authors>
+  <description>Parses the SquashFS compressed read-only file system for Linux. Supports 3.x and 4.x files.</description>
+  <category>Archive</category>
+  <filemask>*.sqsh;*.squashfs</filemask>
+  <idbytes>68 73 71 73</idbytes>
+  <hash>3043c179d89d54e9151fcb64c77ecd975674ad13</hash>
+  <diffhash>4eed0cb3939d7f7c3915da40f7122cca335fe03b</diffhash>
+  <date>2016-09-26</date>
+  <changeauthor>Drake Madison</changeauthor>
+  <comment>Added support for squashfs 4.x files</comment>
+</template>
+<template>
+  <id>174</id>
+  <filename>Cryptfs.bt</filename>
+  <version>1.1</version>
+  <authors>Tim 'diff' Strazzere</authors>
+  <description>Parse the Cryptfs footer from encrypted drives (specifically Android)</description>
+  <category>Operating System</category>
+  <filemask>*.bin</filemask>
+  <idbytes>D0 B5 B1 C4</idbytes>
+  <hash>9cd5fb12fe4bc26ea98ed016d9d821673a3c0efd</hash>
+  <date>2016-10-05</date>
+  <changeauthor>TS</changeauthor>
+  <comment>Fix KDF enum</comment>
+</template>
+<template>
+  <id>175</id>
+  <filename>FNT.bt</filename>
+  <version>0.1</version>
+  <authors>Anon</authors>
+  <description>Parse windows .FNT font files (which can be extracted from .FON files). Specification is here: https://support.microsoft.com/en-us/kb/65123</description>
+  <category>Font</category>
+  <filemask>*.fnt</filemask>
+  <hash>7e88fb30286e4611cba399c25eb8898d3596dd05</hash>
+  <date>2016-10-11</date>
+  <changeauthor>Anon</changeauthor>
+  <comment>Initial version.</comment>
+</template>
+<template>
+  <id>176</id>
+  <filename>JPG.bt</filename>
+  <version>1.6</version>
+  <updatesversion>1.5</updatesversion>
+  <authors>Mor FTP</authors>
+  <description>Template for JPG image files.</description>
+  <category>Image</category>
+  <filemask>*.jpg,*.jpeg</filemask>
+  <idbytes>FF D8 FF</idbytes>
+  <hash>3243b071624d5a9540a994469a2d55d8e0ebad59</hash>
+  <diffhash>f2d2330c6b43873524b488b6e5b4bdb494808756</diffhash>
+  <date>2016-10-18</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Handle when end of file marker is not found.</comment>
+</template>
+<template>
+  <id>177</id>
+  <filename>JPG.bt</filename>
+  <version>1.6.1</version>
+  <updatesversion>1.6</updatesversion>
+  <authors>Mor FTP</authors>
+  <description>Template for JPG image files.</description>
+  <category>Image</category>
+  <filemask>*.jpg,*.jpeg</filemask>
+  <idbytes>FF D8 FF</idbytes>
+  <hash>83f24d2759ef0e671e4d689eae6d0d932eba9b14</hash>
+  <diffhash>66d34d179db4d0f19c1a18e6a268a1781b721d74</diffhash>
+  <date>2016-10-19</date>
+  <changeauthor>Bartosz Dziewonski</changeauthor>
+  <comment>Don't fail when garbage bytes are present between JPEG sections.</comment>
+</template>
+<template>
+  <id>178</id>
+  <filename>Cryptfs.bt</filename>
+  <version>1.2</version>
+  <updatesversion>1.1</updatesversion>
+  <authors>Tim 'diff' Strazzere</authors>
+  <description>Parse the Cryptfs footer from encrypted drives (specifically Android)</description>
+  <category>Operating System</category>
+  <filemask>*.bin</filemask>
+  <idbytes>D0 B5 B1 C4</idbytes>
+  <hash>44c46f021db9203b793e0f181a2294e67e311180</hash>
+  <diffhash>03bf18741cf8fe872f136cca924479b7ab049bfb</diffhash>
+  <date>2016-10-20</date>
+  <changeauthor>TS</changeauthor>
+  <comment>Fix expected structure for older formats, add expected buffer to end.</comment>
+</template>
+<template>
+  <id>179</id>
+  <filename>LZ4.bt</filename>
+  <version>0.2</version>
+  <updatesversion>0.1</updatesversion>
+  <authors>Hanno Hugenberg</authors>
+  <description>Template for LZ4 Framing Format.</description>
+  <category>Archive</category>
+  <filemask>*.lz4,*.lz4f</filemask>
+  <idbytes>04 22 4D 18</idbytes>
+  <hash>e9389f522382afcfa417e5a6a75e34f6e036eec1</hash>
+  <diffhash>71c357aa102b0deb0e54a054c66dbb80e394b833</diffhash>
+  <date>2016-10-24</date>
+  <changeauthor>Hanno Hugenberg</changeauthor>
+  <comment>Fix for skippable frames and allow to parse concatenated lz4 frame files with varying frame types</comment>
+</template>
+<template>
+  <id>180</id>
+  <filename>MXF.bt</filename>
+  <version>0.2</version>
+  <authors>Stefan Riediger</authors>
+  <description>Parse MXF files (Material Exchange Format, SMPTE 377M, SMPTE EG41, SMPTE EG42)</description>
+  <category>Video</category>
+  <filemask>*.mxf</filemask>
+  <idbytes>06 0E 2B 34</idbytes>
+  <hash>d9b23bfaa5136f27d91f6564641999b1cbf8d380</hash>
+  <date>2016-10-31</date>
+  <changeauthor>SR</changeauthor>
+  <comment>Initial Release</comment>
+</template>
+<template>
+  <id>181</id>
+  <filename>FTS.bt</filename>
+  <version>1.0</version>
+  <authors>Dmitry Trefilov</authors>
+  <description>Microsoft Exchange FTS (Fast Transfer Stream) format template.</description>
+  <category>Misc</category>
+  <hash>4e28b275d6fc68aac3692ec2e7e9e984c67722e4</hash>
+  <date>2016-11-20</date>
+  <changeauthor>DT</changeauthor>
+  <comment>Initial release.</comment>
+</template>
+<template>
+  <id>182</id>
+  <filename>JPG.bt</filename>
+  <version>1.6.2</version>
+  <updatesversion>1.6.1</updatesversion>
+  <authors>Mor FTP</authors>
+  <description>Template for JPG image files.</description>
+  <category>Image</category>
+  <filemask>*.jpg,*.jpeg</filemask>
+  <idbytes>FF D8 FF</idbytes>
+  <hash>eb7eabd714050dd1c45f39a89c530dc51a6c18c7</hash>
+  <diffhash>dbd3fdf4eba7d883969c9abb1a3190e536501e88</diffhash>
+  <date>2016-11-29</date>
+  <changeauthor>Bartosz Dziewonski</changeauthor>
+  <comment>Search for end of file marker forwards rather than backwards. Data after the marker may contain bytes that look just like the marker itself. Also, use FindFirst() for better performance.</comment>
+</template>
+<script>
+  <id>183</id>
+  <filename>XORStringBruteForce.1sc</filename>
+  <version>1.0</version>
+  <authors>Jeff White</authors>
+  <description>Brute forces 1-byte XOR keys looking for a string. Default is part of PE header.</description>
+  <category>Search</category>
+  <hash>ff7074447056b40fbfda0c214678830765449db5</hash>
+  <date>2016-12-08</date>
+  <changeauthor>karttoon</changeauthor>
+  <comment>Initial release.</comment>
+</script>
+<script>
+  <id>184</id>
+  <filename>XORSelectionHex.1sc</filename>
+  <version>1.2</version>
+  <updatesversion>1.1</updatesversion>
+  <authors>yoggy</authors>
+  <description>Similar to XORSelection.1sc but you can enter the XOR key in HEX style.</description>
+  <category>Binary</category>
+  <hash>1101f34e0fd5ec421e121bbaa0f9f9a4c52a1737</hash>
+  <diffhash>41cf0a16f2804f32a521c3b05d357fee995afd83</diffhash>
+  <date>2017-01-06</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>XOR key now accepted in different formats (e.g. 'a0f2a7', 'a0,f2,a7' or 'a0 f2 a7').</comment>
+</script>
+<template>
+  <id>185</id>
+  <filename>BPlist.bt</filename>
+  <version>1.0</version>
+  <authors>Alexey Lyashko</authors>
+  <description>Template for parsing Apple Binary Property List format.</description>
+  <category>Operating System</category>
+  <filemask>*.plist</filemask>
+  <idbytes>62 70 6c 69 73 74 30 30  //bplist00</idbytes>
+  <hash>068bfe93c6514035bfae701328382c22902598ae</hash>
+  <date>2017-01-20</date>
+  <changeauthor>A. Lyashko</changeauthor>
+  <comment>Initial release.</comment>
+</template>
+<template>
+  <id>186</id>
+  <filename>BPlist.bt</filename>
+  <version>1.0.1</version>
+  <updatesversion>1.0</updatesversion>
+  <authors>Alexey Lyashko</authors>
+  <description>Template for parsing Apple Binary Property List format.</description>
+  <category>Operating System</category>
+  <filemask>*.plist</filemask>
+  <idbytes>62 70 6c 69 73 74 30 30  //bplist00</idbytes>
+  <hash>eb725a9ba74dc51b36cfba744581c6620973622d</hash>
+  <diffhash>3c32a36e63335e58a71db9affe7a1f6c72c8c5d2</diffhash>
+  <date>2017-01-23</date>
+  <changeauthor>A. Lyashko</changeauthor>
+  <comment>Fixed bug with sign extension in read_offset function.</comment>
+</template>
+<template>
+  <id>187</id>
+  <filename>EMF.bt</filename>
+  <version>0.3</version>
+  <updatesversion>0.2</updatesversion>
+  <authors>Dustin D. Trammell</authors>
+  <description>Enhanced Metafile Format (EMF) template.</description>
+  <category>Image</category>
+  <filemask>*.emf</filemask>
+  <idbytes>01 00 00 00</idbytes>
+  <hash>14a30f91338d07f4f9ff1af7c5684d1f5dabd77f</hash>
+  <diffhash>0227b4e45efa1eab425db07edc7f29d7139e1771</diffhash>
+  <date>2017-02-06</date>
+  <changeauthor>AM</changeauthor>
+  <comment>Fixed record types that had a size of 8 from creating a warning. AM: Removed extra record loop that erroneously added an extra record to every file.</comment>
+</template>
+<template>
+  <id>188</id>
+  <filename>CLASSAdv.bt</filename>
+  <version>1.2</version>
+  <updatesversion>1.1</updatesversion>
+  <authors>Pishchik Ilya L. (RUS)</authors>
+  <description>A template for parsing Java Class (JVM) Files. Includes visualizing bytecode.</description>
+  <category>Programming</category>
+  <filemask>*.class</filemask>
+  <idbytes>CA FE BA BE</idbytes>
+  <hash>2a979717dfff1055c3f214518dc06c9c57ef34c5</hash>
+  <diffhash>639ddda5bc7f52672d8ea96511229349854b6881</diffhash>
+  <date>2017-02-23</date>
+  <changeauthor>Jupiter</changeauthor>
+  <comment>JDK 1.8 and 1.9 detection; link to JVM Specification from Java SE 8 Edition.</comment>
+</template>
+<template>
+  <id>189</id>
+  <filename>EMF.bt</filename>
+  <version>0.4</version>
+  <updatesversion>0.3</updatesversion>
+  <authors>Dustin D. Trammell</authors>
+  <description>Enhanced Metafile Format (EMF) template.</description>
+  <category>Image</category>
+  <filemask>*.emf</filemask>
+  <idbytes>01 00 00 00</idbytes>
+  <hash>ca8ef84f80b8f4fa088cbd75b3bb5b2383cde631</hash>
+  <diffhash>0b4ce6f2a7d0ad75f3325c141b9472e87c634db3</diffhash>
+  <date>2017-03-09</date>
+  <changeauthor>Harli</changeauthor>
+  <comment>Added code to show details of SETDIBITSTODEVICE structure the EMF Record parser Harli : Added condition to only show the optional description if offDescription is not 0x00</comment>
+</template>
+<template>
+  <id>190</id>
+  <filename>MachO.bt</filename>
+  <version>1.4</version>
+  <updatesversion>1.3</updatesversion>
+  <authors>Tim "diff" Strazzere</authors>
+  <description>Quick template for parsing Mach-o binaries, including Mac OS X executables, .o and .dylib files.</description>
+  <category>Executable</category>
+  <filemask>*,*.o,*.dylib</filemask>
+  <idbytes>CF FA ED FE, CE FA ED FE, BE BA FE CA, CA FE BA BE</idbytes>
+  <hash>79eb2ccc4c4381b5c09844b19447d85382e76fb3</hash>
+  <diffhash>225fb580e7c49fc298381d9ca7e94bde3dd9abf6</diffhash>
+  <date>2017-03-16</date>
+  <changeauthor>swigger at gmail.com</changeauthor>
+  <comment>enable encryption segment 64.</comment>
+</template>
+<template>
+  <id>191</id>
+  <filename>LNK.bt</filename>
+  <version>0.2</version>
+  <updatesversion>0.1</updatesversion>
+  <authors>Didier Stevens, Trevor Welsby</authors>
+  <description>View data in a Microsoft shortcut (LNK) file.</description>
+  <category>Operating System</category>
+  <filemask>*.lnk</filemask>
+  <hash>8939a999825e8489ce9182c1de14146766597cf4</hash>
+  <diffhash>ca5ec28dfab25ba74e2548d27eb6be4fb8d01377</diffhash>
+  <date>2017-03-23</date>
+  <changeauthor>T Welsby</changeauthor>
+  <comment>Significant updates per history</comment>
+</template>
+<template>
+  <id>192</id>
+  <filename>OpenType.bt</filename>
+  <version>1.1</version>
+  <updatesversion>1.0</updatesversion>
+  <authors>Dwayne Robinson and Alex McDonnell of Cisco Systems</authors>
+  <description>Displays hierarchy of an OpenType font. This template can also parse TrueType fonts (TTF).</description>
+  <category>Font</category>
+  <filemask>*.otf</filemask>
+  <idbytes>4F 54 54 4F //OTTO</idbytes>
+  <hash>fa1f1a5006d0c235c2a7516b759bb2b7a87503f5</hash>
+  <diffhash>2154e476bbb5e818fa114a1483e2a0b649aa61b6</diffhash>
+  <date>2017-03-10</date>
+  <changeauthor>A.M.</changeauthor>
+  <comment>Added an Exit if an incorrect value is found for formatting in the ExtensionSubstFormat1 subtable from https://www.microsoft.com/typography/otspec/gsub.htm</comment>
+</template>
+<template>
+  <id>193</id>
+  <filename>SeqBox.bt</filename>
+  <version>1.0</version>
+  <authors>Marco Pontello</authors>
+  <description>Explore a SeqBox file container/archive.</description>
+  <category>Archive</category>
+  <filemask>*.sbx</filemask>
+  <idbytes>53 42 78 //SBx</idbytes>
+  <hash>6f01b50c275a3775b4689e1db17f16fcb3acbbb9</hash>
+  <date>2017-04-12</date>
+  <changeauthor>MP</changeauthor>
+  <comment>Initial release.</comment>
+</template>
+<template>
+  <id>194</id>
+  <filename>CLASS.bt</filename>
+  <version>1.4</version>
+  <updatesversion>1.3</updatesversion>
+  <authors>Kevin O. Grover</authors>
+  <description>Parse Java Class (JVM) files.</description>
+  <category>Programming</category>
+  <filemask>*.class</filemask>
+  <idbytes>CA FE BA BE</idbytes>
+  <hash>10960fdfb0f70b361bb7b6181866662c35573501</hash>
+  <diffhash>49ab7d5d964d11267f13942c20462cfc96122357</diffhash>
+  <date>2017-05-16</date>
+  <changeauthor>DO</changeauthor>
+  <comment>Skip next constant after CONSTANT_Long or CONSTANT_Double as per spec.</comment>
+</template>
+<template>
+  <id>195</id>
+  <filename>TTF.bt</filename>
+  <version>0.7</version>
+  <updatesversion>0.6</updatesversion>
+  <authors>James Newton of massmind.org and Alex McDonnell of Cisco Systems</authors>
+  <description>Template to parse TTF (TrueType) fonts.</description>
+  <category>Font</category>
+  <filemask>*.ttf</filemask>
+  <idbytes>00 01 00 00 00</idbytes>
+  <hash>a1e140bf103e02d593b079900419fcc27c6221af</hash>
+  <diffhash>980691bdb0cefbc868ab503b60892acd59deb136</diffhash>
+  <date>2017-05-30</date>
+  <changeauthor>AM</changeauthor>
+  <comment>So many changes for readability, style, and error checking.</comment>
+</template>
+<script>
+  <id>196</id>
+  <filename>RemoveFromStartToCurrentPosition.1sc</filename>
+  <version>1.1</version>
+  <authors>Dreg aka David Reguera Garcia</authors>
+  <description>Remove bytes from start file to current position. Useful when you cant use the keyboard in a demo.</description>
+  <category>Binary</category>
+  <hash>d9850055f527fd17c86e984b52f35a91d24fe3e1</hash>
+  <date>2017-07-06</date>
+  <changeauthor>Dreg</changeauthor>
+  <comment>Category fixed. More info Purpose.</comment>
+</script>
+<script>
+  <id>197</id>
+  <filename>TruncateFileFromCurrentPosition.1sc</filename>
+  <version>1.1</version>
+  <authors>Dreg aka David Reguera Garcia</authors>
+  <description>Truncate the file from the current position. Useful when you cant use the keyboard in a demo.</description>
+  <category>Binary</category>
+  <hash>43c4c91c670a6fc76a81ad6409486a61a4c4d580</hash>
+  <date>2017-07-06</date>
+  <changeauthor>Dreg</changeauthor>
+  <comment>Category fixed. More info Purpose.</comment>
+</script>
+<template>
+  <id>198</id>
+  <filename>DDS.bt</filename>
+  <version>1.0</version>
+  <authors>Aaron Cooper</authors>
+  <description>Parse DDS images</description>
+  <category>Image</category>
+  <filemask>*.dds</filemask>
+  <idbytes>44 44 53 20</idbytes>
+  <hash>7e9da002d66778dd8bb33dbfbeae51fa17133f94</hash>
+  <date>2017-07-11</date>
+  <changeauthor>Aaron Cooper</changeauthor>
+  <comment>Initial release</comment>
+</template>
+<template>
+  <id>199</id>
+  <filename>Quake3Arena_BSP.bt</filename>
+  <version>1.0</version>
+  <authors>Raymond Hulha</authors>
+  <description>010 Editor Binary Template for Quake3 BSP files.</description>
+  <category>Game</category>
+  <filemask>*.bsp</filemask>
+  <idbytes>49 42 53 50 //IBSP</idbytes>
+  <hash>f8f7222ca90b602dfe9a2301b771367faa6421d2</hash>
+  <date>2017-07-14</date>
+  <changeauthor>Raymond Hulha</changeauthor>
+  <comment>Initial Release</comment>
+</template>
+<template>
+  <id>200</id>
+  <filename>Quake3Arena_MD3.bt</filename>
+  <version>1.0</version>
+  <authors>Raymond Hulha</authors>
+  <description>010 Editor Binary Template for Quake3 MD3 files.</description>
+  <category>Game</category>
+  <filemask>*.md3</filemask>
+  <idbytes>49 44 50 33 //IDP3</idbytes>
+  <hash>f024fd381c61e378d2eb59125d6bbce110a7c70f</hash>
+  <date>2017-07-14</date>
+  <changeauthor>Raymond Hulha</changeauthor>
+  <comment>Initial Release</comment>
+</template>
+<template>
+  <id>201</id>
+  <filename>MongoDBWireProtocol.bt</filename>
+  <version>0.1</version>
+  <authors>Raymond Hulha</authors>
+  <description>Analyze captured data from a MongoDB client request.</description>
+  <category>Database</category>
+  <hash>d3d4e7e58cee5bdd8c3f0fb1631ecf0f2a627c39</hash>
+  <date>2017-07-14</date>
+  <changeauthor>Raymond Hulha</changeauthor>
+  <comment>Initial Release</comment>
+</template>
+<template>
+  <id>202</id>
+  <filename>MifareUltralight.bt</filename>
+  <version>1.0</version>
+  <authors>ceres-c</authors>
+  <description>Mifare Ultralight structure parsing. Commonly used in tickets.</description>
+  <category>Electronics</category>
+  <hash>0abf5b3f41403be7865cf12bac4b43e7c4cde088</hash>
+  <date>2017-07-14</date>
+  <changeauthor>ceres-c</changeauthor>
+  <comment>Initial release</comment>
+</template>
+<template>
+  <id>203</id>
+  <filename>DDS.bt</filename>
+  <version>1.1</version>
+  <updatesversion>1.0</updatesversion>
+  <authors>Aaron Cooper</authors>
+  <description>Parse DDS images</description>
+  <category>Image</category>
+  <filemask>*.dds</filemask>
+  <idbytes>44 44 53 20</idbytes>
+  <hash>669729418f9e0a4887eaa883c9882aa8aedc85ea</hash>
+  <diffhash>fc0730f441159159703c145242f46e5ac48fb0a1</diffhash>
+  <date>2017-08-03</date>
+  <changeauthor>Aaron Cooper</changeauthor>
+  <comment>Added pixel format flags formatting.</comment>
+</template>
+<template>
+  <id>204</id>
+  <filename>NDS.bt</filename>
+  <version>1.0</version>
+  <authors>gocha</authors>
+  <description>Defines a template for Nintendo DS cartridge files.</description>
+  <category>Game</category>
+  <filemask>*.nds</filemask>
+  <idbytes>[+0x200]</idbytes>
+  <hash>dbc5c52bf59fa5bd911ccd4338a22772d6f8d6c8</hash>
+  <date>2017-08-15</date>
+  <changeauthor>gocha</changeauthor>
+  <comment>Initial release.</comment>
+</template>
+<template>
+  <id>205</id>
+  <filename>TIF.bt</filename>
+  <version>1.8</version>
+  <updatesversion>1.7</updatesversion>
+  <authors>Kevin O. Grover</authors>
+  <description>Parse TIFF (Tagged Image File Format) files, including GeoTIFF.</description>
+  <category>Image</category>
+  <filemask>*.tif,*.tiff</filemask>
+  <idbytes>49 49 2A 00, 4D 4D 00 2A</idbytes>
+  <hash>59e29d0abb2920481c72db14ae2c45d45c5d6a3c</hash>
+  <diffhash>b21f2eaa17ed83fc83de487b457c88fbd6b11627</diffhash>
+  <date>2017-08-17</date>
+  <changeauthor>KOG</changeauthor>
+  <comment>Fixed typos in tag names</comment>
+</template>
+<template>
+  <id>206</id>
+  <filename>SHP.bt</filename>
+  <version>1.3</version>
+  <updatesversion>1.2</updatesversion>
+  <authors>A Norman</authors>
+  <description>Parses ESRI ShapeFiles.</description>
+  <category>GIS</category>
+  <filemask>*.shp</filemask>
+  <hash>dabedaaaba3d85f9107975502e37dbe1ac0ccb0b</hash>
+  <diffhash>430fd9ed99e9c072bc22004fc48b6aee7619a5f6</diffhash>
+  <date>2017-08-28</date>
+  <changeauthor>K. Grover</changeauthor>
+  <comment>Combined ShapeEnums.  Added Readers.  Alternate record color.</comment>
+</template>
+<template>
+  <id>207</id>
+  <filename>PCAPNG.bt</filename>
+  <version>1.0</version>
+  <authors>Kevin O. Grover</authors>
+  <description>Parse a PCAPNG Packet Capture file.</description>
+  <category>Network</category>
+  <filemask>*.pcapng</filemask>
+  <idbytes>0A 0D 0D 0A</idbytes>
+  <hash>0f9d29b472a6a9942df5a7bb8bdf87e7e6254ca0</hash>
+  <date>2017-09-02</date>
+  <changeauthor>K. Grover</changeauthor>
+  <comment>Alternate block background color.</comment>
+</template>
+<template>
+  <id>208</id>
+  <filename>PNG.bt</filename>
+  <version>2.1</version>
+  <updatesversion>2.0</updatesversion>
+  <authors>Kevin O. Grover, RCS</authors>
+  <description>Parse a PNG (Portable Network Graphics) image file.</description>
+  <category>Image</category>
+  <filemask>*.png</filemask>
+  <idbytes>89 50 4E 47 //%PNG</idbytes>
+  <hash>8ce727a464f49a3dea34a631bc8c664076a13d11</hash>
+  <diffhash>9af22eedb144d55e9555390eb5c5e2bd7613c2ab</diffhash>
+  <date>2017-09-04</date>
+  <changeauthor>K. Grover</changeauthor>
+  <comment>Better colors.  Alternate chunk colors.  Cleaned up messages.</comment>
+</template>
+<template>
+  <id>209</id>
+  <filename>LNK.bt</filename>
+  <version>0.3</version>
+  <updatesversion>0.2</updatesversion>
+  <authors>Didier Stevens, Trevor Welsby</authors>
+  <description>View data in a Microsoft shortcut (LNK) file.</description>
+  <category>Operating System</category>
+  <filemask>*.lnk</filemask>
+  <idbytes>4C 00 00 00 01 14 02 00</idbytes>
+  <hash>7f5ece8861532a2863c60fe8b9cd7b1ed406470f</hash>
+  <diffhash>75c03fd256fad9c27109afc961976841996631a6</diffhash>
+  <date>2017-09-12</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Fixed errors if strings or attributes were empty.</comment>
+</template>
+<template>
+  <id>210</id>
+  <filename>AndroidTrace.bt</filename>
+  <version>1.0</version>
+  <authors>Banny</authors>
+  <description>Define a template for parsing dmtrace.trace files.</description>
+  <category>Operating System</category>
+  <hash>45a91753c773de03a8ba80ca1188e43d048f09b6</hash>
+  <date>2017-09-19</date>
+  <changeauthor>Banny</changeauthor>
+  <comment>record v3 tested.</comment>
+</template>
+<template>
+  <id>211</id>
+  <filename>EZTap_EZVIEW2.bt</filename>
+  <version>0.1</version>
+  <authors>Benjamin Vernoux</authors>
+  <description>Template for EZ-Tap EZView to EZVIEW2 .dat file.</description>
+  <category>Electronics</category>
+  <filemask>*.dat</filemask>
+  <idbytes>45 5A 56 69 65 77 32</idbytes>
+  <hash>af8a2d15f6cb4bbf29eb8bd783cec00522581f21</hash>
+  <date>2017-09-21</date>
+  <changeauthor>Benjamin Vernoux</changeauthor>
+  <comment>Initial release</comment>
+</template>
+<template>
+  <id>212</id>
+  <filename>MP4.bt</filename>
+  <version>3.0</version>
+  <updatesversion>2.2</updatesversion>
+  <authors>Andrew Molyneux, Marian Denes, SweetScape</authors>
+  <description>Defines a template for parsing MP4 and MOV video files.</description>
+  <category>Video</category>
+  <filemask>*.mp4,*.mov,*.m4v</filemask>
+  <idbytes>[+4] 66 74 79 70, [+4] 6D 6F 6F 76, [+4] 6D 64 61 74</idbytes>
+  <hash>1d1c785170f9ac2483bab3a0aa2dd86b55d11ec5</hash>
+  <diffhash>cedad4af7ccc9ed804981074a69e997f8a632f00</diffhash>
+  <date>2017-10-03</date>
+  <changeauthor>A Molyneux</changeauthor>
+  <comment>Total rewrite, more complete and robust.</comment>
+</template>
+<template>
+  <id>213</id>
+  <filename>Picolog_PLW.bt</filename>
+  <version>0.1</version>
+  <authors>Benjamin Vernoux</authors>
+  <description>Template for PicoTech Picologger .PLW file.</description>
+  <category>Electronics</category>
+  <filemask>*.PLW</filemask>
+  <idbytes>[+2] 50 69 63 6F 4C 6F 67 // ??PicoLog</idbytes>
+  <hash>9daad6dd30502e0bdc5315a990044b5ef63ce29c</hash>
+  <date>2017-10-10</date>
+  <changeauthor>Benjamin Vernoux</changeauthor>
+  <comment>Initial release</comment>
+</template>
+<template>
+  <id>214</id>
+  <filename>PNG.bt</filename>
+  <version>2.2</version>
+  <updatesversion>2.1</updatesversion>
+  <authors>Kevin O. Grover, RCS, Mister Wu</authors>
+  <description>Parse a PNG (Portable Network Graphics) and an APNG (Animated Portable Network Graphics) image file.</description>
+  <category>Image</category>
+  <filemask>*.png,*.apng</filemask>
+  <idbytes>89 50 4E 47 //%PNG</idbytes>
+  <hash>ee2c1308a7112e72a3313b4fbe037e994570cc24</hash>
+  <diffhash>41f969cab36f5787345561509139d7d0c355efbf</diffhash>
+  <date>2017-10-23</date>
+  <changeauthor>Mister Wu</changeauthor>
+  <comment>Initial support of APNG chunks: acTL, fcTL, fdAT.</comment>
+</template>
+<template>
+  <id>215</id>
+  <filename>TNEF.bt</filename>
+  <version>0.1</version>
+  <authors>Harli Aquino</authors>
+  <description>Transport Neutral Encapsulation Format (TNEF) Template (usually for Winmail.dat or Win.dat).</description>
+  <category>Network</category>
+  <filemask>*.dat</filemask>
+  <idbytes>78 9F 3E 22</idbytes>
+  <hash>f4136d5d03f4019974b844c3f13f722400a182e3</hash>
+  <date>2017-10-27</date>
+  <changeauthor>Harli</changeauthor>
+  <comment>Initial version</comment>
+</template>
+<template>
+  <id>216</id>
+  <filename>Luac.bt</filename>
+  <version>1.0</version>
+  <authors>fei_cong</authors>
+  <description>Parse lua bytecode .lua and .luac files, support lua 5.2.</description>
+  <category>Programming</category>
+  <filemask>*.luac, *.lua</filemask>
+  <idbytes>1B 4C 75 61</idbytes>
+  <hash>df435fd976f3ae41cde64c7a873853d3dce2b0ce</hash>
+  <date>2017-10-30</date>
+  <changeauthor>fei_cong</changeauthor>
+  <comment>Initial version, support lua 5.2.</comment>
+</template>
+<script>
+  <id>217</id>
+  <filename>CopyAsHex.1sc</filename>
+  <version>1.0</version>
+  <authors>feicong</authors>
+  <description>Copy selected hex bytes as hexstring. Note that this functionality is built into 010 Editor using 'Copy &gt; Copy As &gt; Copy as Hex Text'.</description>
+  <category>Clipboard</category>
+  <hash>98df5d60d211f95c09646b340946d490d5907dfa</hash>
+  <date>2017-10-30</date>
+  <changeauthor>feicong</changeauthor>
+  <comment>Initial release.</comment>
+</script>
+<script>
+  <id>218</id>
+  <filename>DexFixer.1sc</filename>
+  <version>1.0</version>
+  <authors>fei_cong</authors>
+  <description>Fix DEX file sha1 and adler32 value.</description>
+  <category>Checksum</category>
+  <hash>99cca5bba92e3ff3db1c28cf51ada76a4b6c6578</hash>
+  <date>2017-11-01</date>
+  <changeauthor>feicong</changeauthor>
+  <comment>Initial release.</comment>
+</script>
+<template>
+  <id>219</id>
+  <filename>AndroidResource.bt</filename>
+  <version>1.1</version>
+  <updatesversion>1.0</updatesversion>
+  <authors>lichao, fei_cong</authors>
+  <description>Parse AndroidManifest.xml, res/*.xml, and resource.arsc binary files in an Android APK package.</description>
+  <category>Operating System</category>
+  <filemask>*.xml,*.arsc</filemask>
+  <idbytes>03 00, 02 00</idbytes>
+  <hash>530c0bf134427057bde83c822afcc90b0d6b2f30</hash>
+  <diffhash>e3efe3feef6be5c602c4185b7c47921ee79317e8</diffhash>
+  <date>2017-11-01</date>
+  <changeauthor>feicong</changeauthor>
+  <comment>add ResTable_entry and ResTable_map_entry.</comment>
+</template>
+<template>
+  <id>220</id>
+  <filename>Luac.bt</filename>
+  <version>1.1</version>
+  <updatesversion>1.0</updatesversion>
+  <authors>fei_cong</authors>
+  <description>Parse lua bytecode .lua and .luac files, support lua 5.2.</description>
+  <category>Programming</category>
+  <filemask>*.luac, *.lua</filemask>
+  <idbytes>1B 4C 75 61</idbytes>
+  <hash>524ef5df1dd82e89c4a72dd89f8ace5c2abf6c1e</hash>
+  <diffhash>1521ed2fa5c42ed0da2b0385278d73246d6904a2</diffhash>
+  <date>2017-11-15</date>
+  <changeauthor>fei_cong</changeauthor>
+  <comment>add disassembler engine: InstructionRead().</comment>
+</template>
+<template>
+  <id>221</id>
+  <filename>LuaJIT.bt</filename>
+  <version>1.0</version>
+  <authors>fei_cong</authors>
+  <description>Parse luajit bytecode files, support luajit 2.0.5.</description>
+  <category>Programming</category>
+  <filemask>*</filemask>
+  <idbytes>1B 4C 4A</idbytes>
+  <hash>e303394450232c78b0e6b51dc0601599ed87c370</hash>
+  <date>2017-11-21</date>
+  <changeauthor>fei_cong</changeauthor>
+  <comment>Initial version, support luajit 2.0.5.</comment>
+</template>
+<template>
+  <id>222</id>
+  <filename>SCP.bt</filename>
+  <version>0.3</version>
+  <updatesversion>0.2</updatesversion>
+  <authors>Vasyl Tsvirkunov</authors>
+  <description>SuperCard Pro dump file format based on official format document.</description>
+  <category>Misc</category>
+  <filemask>*.scp</filemask>
+  <idbytes>53 43 50 //SCP</idbytes>
+  <hash>cbd88773f82e6b9aa2cf2ba852a5bf035a61cefc</hash>
+  <diffhash>67c279b29f1a1d9c7e26f085145a0cdc1d1d145d</diffhash>
+  <date>2017-12-05</date>
+  <changeauthor>Natalia Portillo</changeauthor>
+  <comment>Updated for v1.6 file format</comment>
+</template>
+<template>
+  <id>223</id>
+  <filename>LuaJIT.bt</filename>
+  <version>1.1</version>
+  <updatesversion>1.0</updatesversion>
+  <authors>feicong</authors>
+  <description>Parse luajit bytecode files, support luajit 2.0.5.</description>
+  <category>Programming</category>
+  <filemask>*</filemask>
+  <idbytes>1B 4C 4A</idbytes>
+  <hash>d9ce2f06cb44ff61727e48d703260b5f45fbe94c</hash>
+  <diffhash>a61c8f460f0fc89e4c4b859b58d2003ba9429fce</diffhash>
+  <date>2017-12-11</date>
+  <changeauthor>feicong</changeauthor>
+  <comment>Add disassembler engine: InstructionRead().</comment>
+</template>
+<template>
+  <id>224</id>
+  <filename>JPG.bt</filename>
+  <version>1.6.3</version>
+  <updatesversion>1.6.2</updatesversion>
+  <authors>Ibrahim Onaran</authors>
+  <description>Template for JPG image files.</description>
+  <category>Image</category>
+  <filemask>*.jpg,*.jpeg</filemask>
+  <idbytes>FF D8 FF</idbytes>
+  <hash>07f1ab68fd03962f73d34e4615e962fffe32c795</hash>
+  <diffhash>04693c6bc5a16e6569de0de283a8bec52f240bd2</diffhash>
+  <date>2018-01-04</date>
+  <changeauthor>I Onaran</changeauthor>
+  <comment>Changed author information.</comment>
+</template>
+<template>
+  <id>225</id>
+  <filename>ELF.bt</filename>
+  <version>2.5.5</version>
+  <updatesversion>2.5.4</updatesversion>
+  <authors>Anon, Tim "diff" Strazzere</authors>
+  <description>Decode the ELF format for both 32/64 bit in big/little endian, decode the elf, program, and section headers. Also decode the dynamic symbol table entries. Many fields implement custom viewers but do not handle writing from those views.</description>
+  <category>Executable</category>
+  <filemask>*</filemask>
+  <idbytes>7F 45 4C 46</idbytes>
+  <hash>ea5e7af62d3f26b331188609c59e397e6772c38a</hash>
+  <diffhash>02185d45278479a5c1758197d34b97e4485a9fb1</diffhash>
+  <date>2018-01-28</date>
+  <changeauthor>T Strazzere</changeauthor>
+  <comment>Fix overflowing of section tables</comment>
+</template>
+<template>
+  <id>226</id>
+  <filename>010Theme.bt</filename>
+  <version>0.0.1</version>
+  <authors>Michael Appel</authors>
+  <description>Template for 010 Editor color/theme export files.</description>
+  <category>Software</category>
+  <filemask>*.1tm</filemask>
+  <idbytes>25 54 48 4D</idbytes>
+  <hash>8e8bc7d2a01eb158d05569eab773c7ba53e1facc</hash>
+  <date>2018-01-30</date>
+  <changeauthor>Michael Appel</changeauthor>
+  <comment>First public realease</comment>
+</template>
+<template>
+  <id>227</id>
+  <filename>MP3.bt</filename>
+  <version>1.2</version>
+  <updatesversion>1.1</updatesversion>
+  <authors>Ivan Getta</authors>
+  <description>Parse an MP3 music file.</description>
+  <category>Audio</category>
+  <filemask>*.mp3</filemask>
+  <idbytes>49 44 33, FF</idbytes>
+  <hash>cc4298d59f168d0c7cd224f8500a7e8e0e8da655</hash>
+  <diffhash>5df93686afafd914fbe0df773bd9e4eb28694a7f</diffhash>
+  <date>2018-01-31</date>
+  <changeauthor>Bartosz Dziewonski</changeauthor>
+  <comment>Added probably partial and incomplete support for ID3v2.4 tags.</comment>
+</template>
+<template>
+  <id>228</id>
+  <filename>Torrent.bt</filename>
+  <version>1.0</version>
+  <authors>Bartosz Dziewonski</authors>
+  <description>Parse torrent files.</description>
+  <category>Internet</category>
+  <filemask>*.torrent</filemask>
+  <hash>87c9badc077fff1439641f2767dce6d51dae94fc</hash>
+  <date>2018-01-31</date>
+  <changeauthor>Bartosz Dziewonski</changeauthor>
+  <comment>Initial version.</comment>
+</template>
+<template>
+  <id>229</id>
+  <filename>ThumbCache.bt</filename>
+  <version>1.0</version>
+  <authors>Denis Anisimov</authors>
+  <description>Parses Windows thumbnail cache files (thumbcache_idx.db, thumbcache_XXX.db).</description>
+  <category>Operating System</category>
+  <filemask>thumbcache*.db,iconcache*.db</filemask>
+  <idbytes>43 4D 4D 4D, 49 4D 4D 4D, [+4] 49 4D 4D 4D</idbytes>
+  <hash>0a5885859fe07bd0dff98e08433ac0bb78308a71</hash>
+  <date>2018-02-12</date>
+  <changeauthor>Denis Anisimov</changeauthor>
+  <comment>Initial release</comment>
+</template>
+<script>
+  <id>230</id>
+  <filename>AlpineAPN.1sc</filename>
+  <version>0.4</version>
+  <authors>JP2EN Limited</authors>
+  <description>Convert BMP graphics to use as a backgroung picture in ALPINE iDA-X001 receiver. 320x240 16bit 5-6-5 RGB color file required. Destination file should be saved with *.apn extension</description>
+  <category>Format Specific</category>
+  <hash>895f7afd3303c3580fadc61c800430abab11f1b0</hash>
+  <requiresversion>4</requiresversion>
+  <date>2018-03-01</date>
+  <changeauthor>JP2EN Limited</changeauthor>
+  <comment>Initial release.</comment>
+</script>
+<template>
+  <id>231</id>
+  <filename>EXE.bt</filename>
+  <version>0.4</version>
+  <updatesversion>0.3</updatesversion>
+  <authors>xSpy, Peter Kankowski, SweetScape Software</authors>
+  <description>Parse Windows executable exe, dll, and sys files. Supports 32 and 64 bit.</description>
+  <category>Executable</category>
+  <filemask>*.exe,*.dll,*.sys</filemask>
+  <idbytes>4D 5A //MZ</idbytes>
+  <hash>7160e62340f400dcf2541a72fcb13c2dbe3e7e1d</hash>
+  <diffhash>fc5c7e87d010e9226eff7be1d733e8121d2719b6</diffhash>
+  <date>2018-03-09</date>
+  <changeauthor>Rafal Cyran</changeauthor>
+  <comment>Fixed size of IMAGE_EXPORT_DIRECTORY</comment>
+</template>
+<template>
+  <id>232</id>
+  <filename>PCAP.bt</filename>
+  <version>0.3</version>
+  <updatesversion>0.2</updatesversion>
+  <authors>Didier Stevens</authors>
+  <description>Parse a PCAP network capture file.</description>
+  <category>Network</category>
+  <filemask>*.pcap</filemask>
+  <idbytes>D4 C3 B2 A1</idbytes>
+  <hash>34bac70a75e75b736b87e70deb7abd1767ed46a3</hash>
+  <diffhash>e47b80574854e3b993a17ee29789aeab308eb6ea</diffhash>
+  <date>2018-03-15</date>
+  <changeauthor>Banny</changeauthor>
+  <comment>support raw data pcap file.</comment>
+</template>
+<template>
+  <id>233</id>
+  <filename>GGPK.bt</filename>
+  <version>1.0</version>
+  <authors>Maximilian Munchow</authors>
+  <description>A template for the content.ggpk used in Path of Exile.</description>
+  <category>Game</category>
+  <filemask>*.ggpk</filemask>
+  <idbytes>[+4] 47 47 50 4B</idbytes>
+  <hash>2c38b5a44d7156dc571863141582aa4d96759e55</hash>
+  <date>2018-04-04</date>
+  <changeauthor>Maximilian Munchow</changeauthor>
+  <comment>Created Template</comment>
+</template>
+<template>
+  <id>234</id>
+  <filename>EXE.bt</filename>
+  <version>0.5</version>
+  <updatesversion>0.4</updatesversion>
+  <authors>xSpy, Peter Kankowski, SweetScape Software</authors>
+  <description>Parse Windows executable exe, dll, and sys files. Supports 32 and 64 bit.</description>
+  <category>Executable</category>
+  <filemask>*.exe,*.dll,*.sys</filemask>
+  <idbytes>4D 5A //MZ</idbytes>
+  <hash>a02b52a9a589f6127fd944f70c6b7f08c7ce092a</hash>
+  <diffhash>94ac9d7e5758358f9acbfcd09ababbbdffaed67f</diffhash>
+  <date>2018-04-22</date>
+  <changeauthor>Joshua Dugie</changeauthor>
+  <comment>Added resource section parsing, cleaned up formatting and order, also added Resource Directory String parsing</comment>
+</template>
+<template>
+  <id>235</id>
+  <filename>EDID.bt</filename>
+  <version>1.2</version>
+  <updatesversion>1.1.1</updatesversion>
+  <authors>Rafael Vuijk</authors>
+  <description>Template for EDID files (Extended display identification data).</description>
+  <category>Electronics</category>
+  <filemask>edid.bin,*.edid</filemask>
+  <idbytes>00 FF FF FF FF FF FF 00</idbytes>
+  <hash>760255546c8b8dfe6366d3dbc39074df57478a44</hash>
+  <diffhash>889646ded9bd157d2160c080758c1d0b4da527f3</diffhash>
+  <date>2018-05-05</date>
+  <changeauthor>J Andersen</changeauthor>
+  <comment>Added +1 to DataBlockSize to include size byte itself.</comment>
+</template>
+<template>
+  <id>236</id>
+  <filename>EatonAPR48.bt</filename>
+  <version>1.0</version>
+  <authors>Glaukon Ariston</authors>
+  <description>Eaton APR48 power supply's EEPROM structure.</description>
+  <category>Electronics</category>
+  <filemask>*.bin</filemask>
+  <idbytes>FF EE FF C0 04</idbytes>
+  <hash>a5710352d8bc89b88684caa1ffe86355bb0459ce</hash>
+  <date>2018-05-09</date>
+  <changeauthor>Glaukon Ariston</changeauthor>
+  <comment>Initial release.</comment>
+</template>
+<template>
+  <id>237</id>
+  <filename>PCAPNG.bt</filename>
+  <version>1.1</version>
+  <updatesversion>1.0</updatesversion>
+  <authors>Kevin O. Grover</authors>
+  <description>Parse a PCAPNG Packet Capture file.</description>
+  <category>Network</category>
+  <filemask>*.pcapng,*.ntar</filemask>
+  <idbytes>0A 0D 0D 0A</idbytes>
+  <hash>1604739a1142782e69e11d9cc7adc8a9e201a0ab</hash>
+  <diffhash>0911922720f5043e321ce6f8806d957f57f47e32</diffhash>
+  <date>2018-05-13</date>
+  <changeauthor>K. Grover</changeauthor>
+  <comment>Refactor.  Cleanup.  Fixed PB reader.</comment>
+</template>
+<script>
+  <id>238</id>
+  <filename>BracketMatch.1sc</filename>
+  <version>0.1</version>
+  <authors>Artur Babecki</authors>
+  <description>Finds the matching bracket("{}()[]"), selects the matched block. When the ending bracket is not found gives information about the number lacking brackets and sets the cursor at the last unbalanced bracket found.</description>
+  <category>Text</category>
+  <hash>6d6040e412251d35c759ad6c33b1e00fb1a49ea9</hash>
+  <date>2018-05-21</date>
+  <changeauthor>Artur Babecki</changeauthor>
+  <comment>Initial release</comment>
+</script>
+<script>
+  <id>239</id>
+  <filename>QuickSort2.1sc</filename>
+  <version>1.0</version>
+  <authors>Artur Babecki</authors>
+  <description>The variant of the quicksort function for the numerical arrays. Keeps  information about the original indexes in the separate table. Allows to sort the fragment of the array.</description>
+  <category>Utility</category>
+  <hash>8970bab29ca3ca6cf52d2af508af98056c846b22</hash>
+  <date>2018-05-21</date>
+  <changeauthor>Artur Babecki</changeauthor>
+  <comment>Initial release.</comment>
+</script>
+<template>
+  <id>240</id>
+  <filename>PCAPNG.bt</filename>
+  <version>1.3</version>
+  <updatesversion>1.1</updatesversion>
+  <authors>Kevin O. Grover</authors>
+  <description>Parse a PCAPNG Packet Capture file.</description>
+  <category>Network</category>
+  <filemask>*.pcapng,*.ntar</filemask>
+  <idbytes>0A 0D 0D 0A</idbytes>
+  <hash>3df8409d781dd9e9290a2d08c701ebbf834338d6</hash>
+  <diffhash>28518baba37c5a77b0225e2c14e33c03ff140128</diffhash>
+  <date>2018-06-09</date>
+  <changeauthor>K. Grover</changeauthor>
+  <comment>Pad based on data size.</comment>
+</template>
+<template>
+  <id>241</id>
+  <filename>MFT.bt</filename>
+  <version>0.1</version>
+  <authors>Eric R. Zimmerman</authors>
+  <description>Parse a file containing NTFS MFT FILE records.</description>
+  <category>Drives</category>
+  <filemask>*MFT*</filemask>
+  <idbytes>46 49 4C 45 //FILE</idbytes>
+  <hash>8742f62bfa2ebea0009a6e7a3e438af65a579d82</hash>
+  <date>2018-07-06</date>
+  <changeauthor>Eric R. Zimmerman</changeauthor>
+  <comment>Initial release</comment>
+</template>
+<template>
+  <id>242</id>
+  <filename>MP4.bt</filename>
+  <version>3.1</version>
+  <updatesversion>3.0</updatesversion>
+  <authors>Alexey Lyashko, Andrew Molyneux, Marian Denes, SweetScape</authors>
+  <description>Defines a template for parsing MP4 and MOV video files.</description>
+  <category>Video</category>
+  <filemask>*.mp4,*.mov,*.m4v</filemask>
+  <idbytes>[+4] 66 74 79 70, [+4] 6D 6F 6F 76, [+4] 6D 64 61 74</idbytes>
+  <hash>cf9114326cc44c23317aac7730d9295e1de7b80d</hash>
+  <diffhash>a816a990c4a01e0d1eef26a3897d416af82bf629</diffhash>
+  <date>2018-07-17</date>
+  <changeauthor>A. Lyashko</changeauthor>
+  <comment>Added support for sample table atoms.</comment>
+</template>
+<template>
+  <id>243</id>
+  <filename>PNG.bt</filename>
+  <version>2.3</version>
+  <updatesversion>2.2</updatesversion>
+  <authors>Kevin O. Grover, RCS, Mister Wu</authors>
+  <description>Parse PNG (Portable Network Graphics) and APNG (Animated Portable Network Graphics) image files.</description>
+  <category>Image</category>
+  <filemask>*.png,*.apng</filemask>
+  <idbytes>89 50 4E 47 //%PNG</idbytes>
+  <hash>878f5e2f8f08fbb779e24bb752b8426fab0565e7</hash>
+  <diffhash>9e143c3ddf08fc146b529230b665599158095089</diffhash>
+  <date>2018-08-17</date>
+  <changeauthor>K. Grover</changeauthor>
+  <comment>Uniform type names.  Formatting/comments.</comment>
+</template>
+<script>
+  <id>244</id>
+  <filename>Find_and_Bookmark.1sc</filename>
+  <version>0.1</version>
+  <authors>Artur Babecki</authors>
+  <description>Find the interactively specified pattern and bookmark the results.The method of the search and the bookmark name can be selected.The last search pattern is kept in the environment variable. Script uses the selection as the range (if specified). See comment inside for further information.</description>
+  <category>Search</category>
+  <hash>19609d4d6460fa5f3416a44c55e833a24cbde1e2</hash>
+  <date>2018-08-22</date>
+  <changeauthor>Artur Babecki</changeauthor>
+  <comment>Initial release</comment>
+</script>
+<template>
+  <id>245</id>
+  <filename>WASM.bt</filename>
+  <version>0.1</version>
+  <authors>Harli Aquino</authors>
+  <description>WebAssembly (WASM) Template</description>
+  <category>Internet</category>
+  <filemask>*.wasm</filemask>
+  <idbytes>00 61 73 6D</idbytes>
+  <hash>96da0c4c6fa3ec7b17af504291267d16fc3b5fe5</hash>
+  <date>2018-09-06</date>
+  <changeauthor>Harli</changeauthor>
+  <comment>Initial version</comment>
+</template>
+<template>
+  <id>246</id>
+  <filename>010.bt</filename>
+  <version>1.0</version>
+  <authors>SweetScape Software</authors>
+  <description>Syntax highlighting for 010 Editor Binary Templates and Scripts.</description>
+  <category>Syntax</category>
+  <filemask>*.bt;*.1sc</filemask>
+  <hash>a45a20ff8411b6abd4925e19751904c9496716cd</hash>
+  <requiresversion>9</requiresversion>
+  <date>2018-10-03</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Initial version.</comment>
+</template>
+<template>
+  <id>247</id>
+  <filename>CPP.bt</filename>
+  <version>1.0</version>
+  <authors>SweetScape Software</authors>
+  <description>Syntax highlighting for C/C++ files.</description>
+  <category>Syntax</category>
+  <filemask>*.cpp,*.c,*.h,*.hpp,*.cxx</filemask>
+  <hash>13a5bff0480df7b0d56eaa252f9163fe43ca54c6</hash>
+  <requiresversion>9</requiresversion>
+  <date>2018-10-03</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Initial version.</comment>
+</template>
+<template>
+  <id>248</id>
+  <filename>XML.bt</filename>
+  <version>1.0</version>
+  <authors>SweetScape Software</authors>
+  <description>Syntax highlighting for XML files.</description>
+  <category>Syntax</category>
+  <filemask>*.xml,*.xsl,*.xslt</filemask>
+  <hash>9ef8c77f3a6df26d5327200c0c30f1a883760d06</hash>
+  <requiresversion>9</requiresversion>
+  <date>2018-10-03</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Initial version.</comment>
+</template>
+<template>
+  <id>249</id>
+  <filename>HTML.bt</filename>
+  <version>1.0</version>
+  <authors>SweetScape Software</authors>
+  <description>Syntax highlighting for HTML files.</description>
+  <category>Syntax</category>
+  <filemask>*.html,*.htm,*.xhtml,*.xht</filemask>
+  <hash>c0a45607400a5c967dcd2ecb92886188624c610f</hash>
+  <requiresversion>9</requiresversion>
+  <date>2018-10-03</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Initial version.</comment>
+</template>
+<template>
+  <id>250</id>
+  <filename>PHP.bt</filename>
+  <version>1.0</version>
+  <authors>SweetScape Software</authors>
+  <description>Syntax highlighting for PHP files.</description>
+  <category>Syntax</category>
+  <filemask>*.php</filemask>
+  <hash>cf3a5b18efbf7689645cc1891d4f9f1b255de791</hash>
+  <requiresversion>9</requiresversion>
+  <date>2018-10-03</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Initial version.</comment>
+</template>
+<template>
+  <id>251</id>
+  <filename>SQL.bt</filename>
+  <version>1.0</version>
+  <authors>SweetScape Software</authors>
+  <description>Syntax highlighting for SQL files.</description>
+  <category>Syntax</category>
+  <filemask>*.sql</filemask>
+  <hash>558e8021282d1003d49f8e4debbbbf3ababfc8a6</hash>
+  <requiresversion>9</requiresversion>
+  <date>2018-10-15</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Initial version.</comment>
+</template>
+<template>
+  <id>252</id>
+  <filename>InspectorDates.bt</filename>
+  <version>1.2</version>
+  <updatesversion>1.1</updatesversion>
+  <authors>SweetScape Software</authors>
+  <description>Demonstrates how to add a series of dates to the Auto Inspector. Includes: WebkitTime (64-bit int, microseconds since 01/01/1601), HFSTime (32-bit int, seconds since 01/01/1904), AppleTime (32-bit int, seconds since 01/01/2001), PRTime (64-bit int, microseconds since 01/01/1970), JavaTime (64-bit int, microseconds since 01/01/1970), GPSTime (32-bit int, seconds since 01/06/1980), BlackberryDate (32-bit int, minutes since 01/01/1900).</description>
+  <category>Inspector</category>
+  <hash>20e6c6045f31c1d1db19ae7550b431712105f433</hash>
+  <diffhash>b4b8b4857bc35a52d0fcc34a5ca8dd2f2329525a</diffhash>
+  <requiresversion>4</requiresversion>
+  <date>2018-10-15</date>
+  <changeauthor>K. Grover</changeauthor>
+  <comment>Corrected JavaTime comment.</comment>
+</template>
+<template>
+  <id>253</id>
+  <filename>Java.bt</filename>
+  <version>1.0</version>
+  <authors>SweetScape Software</authors>
+  <description>Syntax highlighting for Java files.</description>
+  <category>Syntax</category>
+  <filemask>*.java</filemask>
+  <hash>88458a73c57b468e3a058473d0053d19e80d8a6b</hash>
+  <requiresversion>9</requiresversion>
+  <date>2018-10-16</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Initial version.</comment>
+</template>
+<template>
+  <id>254</id>
+  <filename>Bash.bt</filename>
+  <version>1.0</version>
+  <authors>SweetScape Software</authors>
+  <description>Syntax highlighting for Bash shell files.</description>
+  <category>Syntax</category>
+  <filemask>*.sh,*.bash,*.bsh,*.csh,*.bashrc,*.bash_profile,*.profile</filemask>
+  <hash>c54e014d36e3711f6fa89201e3a0ce6bf9e48e05</hash>
+  <requiresversion>9</requiresversion>
+  <date>2018-10-17</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Initial version.</comment>
+</template>
+<template>
+  <id>255</id>
+  <filename>Drive.bt</filename>
+  <version>2.2</version>
+  <updatesversion>2.0</updatesversion>
+  <authors>SweetScape Software, Benjamin Vernoux</authors>
+  <description>Parse logical and physical drives including MBR, FAT16, FAT32, HFS, NTFS and extended partitions. Can display subdirectories and data for individual files. Note that some NTFS drives may not work properly (see file comments).</description>
+  <category>Drives</category>
+  <filemask>Drive*,Physical*</filemask>
+  <idbytes>[+510] 55 AA,[+1024] 48 2B,[+1024] 48 58</idbytes>
+  <hash>bdd92c4e89f69fcfcecfeb505079347e4e728865</hash>
+  <diffhash>0292bd258633056db81f76c66c64f48e9e91525a</diffhash>
+  <date>2018-10-24</date>
+  <changeauthor>HenryGab</changeauthor>
+  <comment>Fix multiple bugs in FAT16/FAT32.</comment>
+</template>
+<template>
+  <id>256</id>
+  <filename>iNes.bt</filename>
+  <version>1.0</version>
+  <authors>Alexandre Frigon</authors>
+  <description>Get information from the nes emulator standard format iNes.</description>
+  <category>Game</category>
+  <filemask>*.nes</filemask>
+  <idbytes>4E 45 53 1A</idbytes>
+  <hash>0695a7e1d2160015bc15586baf3c74351a0901ae</hash>
+  <date>2018-10-29</date>
+  <changeauthor>Alexandre Frigon</changeauthor>
+  <comment>Initial release.</comment>
+</template>
+<template>
+  <id>257</id>
+  <filename>JavaScript.bt</filename>
+  <version>1.0</version>
+  <authors>SweetScape Software</authors>
+  <description>Syntax highlighting for JavaScript files.</description>
+  <category>Syntax</category>
+  <filemask>*.js,*.jsm</filemask>
+  <hash>9f5f3135294cb0e369dd1197e9c01d0f74ff2a5c</hash>
+  <requiresversion>9</requiresversion>
+  <date>2018-11-01</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Initial version.</comment>
+</template>
+<template>
+  <id>258</id>
+  <filename>Modo.bt</filename>
+  <version>1.0</version>
+  <authors>Gwynne Reddick (Original version), Simon Beetham (This version)</authors>
+  <description>Reads all known chunks in Modo *.lxo, *.lxp. *.lxe and *.lxl 3D files as documented at http://sdk.luxology.com/wiki/File_Formats.</description>
+  <category>CAD</category>
+  <filemask>*.lx?</filemask>
+  <idbytes>46 4F 52 4D //FORM</idbytes>
+  <hash>9b614ff06ba0b6aeebb2794d04a8197d786cfd0b</hash>
+  <date>2018-11-06</date>
+  <changeauthor>Simon Beetham</changeauthor>
+  <comment>Original version provided by Gwynne Reddick back in 2014 significantly altered, amended as per url above</comment>
+</template>
+<template>
+  <id>259</id>
+  <filename>MachO.bt</filename>
+  <version>1.5</version>
+  <updatesversion>1.4</updatesversion>
+  <authors>Tim "diff" Strazzere</authors>
+  <description>Quick template for parsing Mach-o binaries, including Mac OS X executables, .o and .dylib files.</description>
+  <category>Executable</category>
+  <filemask>*,*.o,*.dylib</filemask>
+  <idbytes>CF FA ED FE, CE FA ED FE, BE BA FE CA, CA FE BA BE</idbytes>
+  <hash>4b84e0d1fe9ea478ccc1e5109d5be43781ef6d2f</hash>
+  <diffhash>99e4d493896507a8ff20bdade0908031a09ee657</diffhash>
+  <date>2018-11-09</date>
+  <changeauthor>swigger at gmail.com</changeauthor>
+  <comment>support LC_BUILD_VERSION load command.</comment>
+</template>
+<template>
+  <id>260</id>
+  <filename>Drive.bt</filename>
+  <version>2.4</version>
+  <updatesversion>2.2</updatesversion>
+  <authors>SweetScape Software, Benjamin Vernoux</authors>
+  <description>Parse logical and physical drives including MBR, FAT16, FAT32, HFS, NTFS and extended partitions. Can display subdirectories and data for individual files. Note that some NTFS drives may not work properly (see file comments).</description>
+  <category>Drives</category>
+  <filemask>Drive*,Physical*</filemask>
+  <idbytes>[+510] 55 AA,[+1024] 48 2B,[+1024] 48 58</idbytes>
+  <hash>a266830c408da1679d9d0d3ab80923b1147bc370</hash>
+  <diffhash>eb644b72aef26df61cbcad60b63fa942a0a2962f</diffhash>
+  <date>2018-11-14</date>
+  <changeauthor>HenryGab</changeauthor>
+  <comment>Fix file system recognition sequence, support partition-less media</comment>
+</template>
+<template>
+  <id>261</id>
+  <filename>Drive.bt</filename>
+  <version>2.6</version>
+  <updatesversion>2.4</updatesversion>
+  <authors>SweetScape Software, Benjamin Vernoux</authors>
+  <description>Parse logical and physical drives including MBR, FAT12, FAT16, FAT32, HFS, NTFS and extended partitions. Can display subdirectories and data for individual files. Note that some NTFS drives may not work properly (see file comments).</description>
+  <category>Drives</category>
+  <filemask>Drive*,Physical*</filemask>
+  <idbytes>[+510] 55 AA,[+1024] 48 2B,[+1024] 48 58</idbytes>
+  <hash>e033205ddfaa3ccf7b5bca1b7edd091d2b7f9c8a</hash>
+  <diffhash>d43f7d4d808347a58f2b06dce28aa545b123c96c</diffhash>
+  <date>2018-11-15</date>
+  <changeauthor>HenryGab</changeauthor>
+  <comment>Add support for FAT12.</comment>
+</template>
+<template>
+  <id>262</id>
+  <filename>Modo.bt</filename>
+  <version>1.1</version>
+  <updatesversion>1.0</updatesversion>
+  <authors>Gwynne Reddick (Original version), Simon Beetham (This version)</authors>
+  <description>Reads all known chunks in Modo *.lxo, *.lxp. *.lxe and *.lxl 3D files as documented at http://sdk.luxology.com/wiki/File_Formats.</description>
+  <category>CAD</category>
+  <filemask>*.lx?</filemask>
+  <idbytes>46 4F 52 4D //FORM</idbytes>
+  <hash>8e719bb7e1cfb37a56fb11e80bdad2fea81cbacc</hash>
+  <diffhash>d5d3a1c30f508035407dd12e9e0c831afa14ee52</diffhash>
+  <date>2018-11-21</date>
+  <changeauthor>Simon Beetham</changeauthor>
+  <comment>Corrected display of point &amp; poly indexing on vmap, vmad &amp; vmed chunks where variable sized index's apply. Corrected display of item name where ITEM.VNAM sub-chunks don't exist in .lxp's</comment>
+</template>
+<template>
+  <id>263</id>
+  <filename>Batch.bt</filename>
+  <version>1.0</version>
+  <authors>SweetScape Software</authors>
+  <description>Syntax highlighting for Windows batch files.</description>
+  <category>Syntax</category>
+  <filemask>*.bat,*.cmd</filemask>
+  <hash>79b2e598a6197a35fc678e7345f01658d1560d55</hash>
+  <requiresversion>9</requiresversion>
+  <date>2018-11-22</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Initial version.</comment>
+</template>
+<template>
+  <id>264</id>
+  <filename>VB.bt</filename>
+  <version>1.0</version>
+  <authors>SweetScape Software</authors>
+  <description>Syntax highlighting for Visual Basic files.</description>
+  <category>Syntax</category>
+  <filemask>*.vb,*.vbs</filemask>
+  <hash>16f8810a090aecf03fc07fb66ec1a9c069816090</hash>
+  <requiresversion>9</requiresversion>
+  <date>2018-11-27</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Initial version.</comment>
+</template>
+<template>
+  <id>265</id>
+  <filename>PowerShell.bt</filename>
+  <version>1.0</version>
+  <authors>SweetScape Software</authors>
+  <description>Syntax highlighting for Windows PowerShell scripts.</description>
+  <category>Syntax</category>
+  <filemask>*.ps1,*.psm1</filemask>
+  <hash>b1cb1c858c727efa1ae1dc0fda53c16bbaf24e75</hash>
+  <requiresversion>9</requiresversion>
+  <date>2018-11-28</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Initial version.</comment>
+</template>
+<template>
+  <id>266</id>
+  <filename>CSS.bt</filename>
+  <version>1.0</version>
+  <authors>SweetScape Software</authors>
+  <description>Syntax highlighting for Cascading Style Sheets (CSS).</description>
+  <category>Syntax</category>
+  <filemask>*.css</filemask>
+  <hash>c6f471adc12335f09426728c2ebff3af61e020ee</hash>
+  <requiresversion>9</requiresversion>
+  <date>2018-12-11</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Initial version.</comment>
+</template>
+<template>
+  <id>267</id>
+  <filename>JPG.bt</filename>
+  <version>1.6.4</version>
+  <updatesversion>1.6.3</updatesversion>
+  <authors>Ibrahim Onaran</authors>
+  <description>Template for JPG image files.</description>
+  <category>Image</category>
+  <filemask>*.jpg,*.jpeg</filemask>
+  <idbytes>FF D8 FF</idbytes>
+  <hash>087f70421827f5c7a5eb67816f69c153cc08e812</hash>
+  <diffhash>0ceeb3acb8d17ef307081ccee0cde19da07ea98b</diffhash>
+  <date>2018-12-20</date>
+  <changeauthor>Denis Anisimov</changeauthor>
+  <comment>COMPSOS bug fixed.</comment>
+</template>
+<script>
+  <id>268</id>
+  <filename>SimpleEncoder.1sc</filename>
+  <version>1.0</version>
+  <authors>Didier Stevens</authors>
+  <description>Encode current selection by shifting characters. Supported encodings: ROT-5, ROT-13, ROT-47, Caesar and custom shifts. The complete file is encoded when nothing is selected.</description>
+  <category>Binary</category>
+  <hash>6721055759d385d372055f12255c21ea50b1fc2c</hash>
+  <date>2018-12-25</date>
+  <changeauthor>Didier Stevens</changeauthor>
+  <comment>start</comment>
+</script>
+<script>
+  <id>269</id>
+  <filename>XORSelection.1sc</filename>
+  <version>4.0</version>
+  <updatesversion>3.1</updatesversion>
+  <authors>Didier Stevens</authors>
+  <description>Xors the current selection with a set of bytes, which causes the bytes to be encoded so they cannot be read by a human. Run the Xor again on the encoded selection to decode the data.</description>
+  <category>Binary</category>
+  <hash>3292fb17e7c284d21194491a10f56879e747612a</hash>
+  <diffhash>c38137d5ca16eb3a42eb15f652aa85447fdd67bf</diffhash>
+  <date>2018-12-30</date>
+  <changeauthor>D Stevens</changeauthor>
+  <comment>refactoring to handle keys with null bytes and hex keys with whitespace</comment>
+</script>
+<template>
+  <id>270</id>
+  <filename>Nus3Audio.bt</filename>
+  <version>1.0</version>
+  <authors>jam1garner</authors>
+  <description>Parse nus3 music archives.</description>
+  <category>Archive</category>
+  <filemask>*.nus3audio</filemask>
+  <idbytes>4E 55 53 33 //nus3</idbytes>
+  <hash>3a870b07899e9777bd99bc8d920ffe8502f4571d</hash>
+  <date>2019-01-02</date>
+  <changeauthor>jam1garner</changeauthor>
+  <comment>Initial Commit</comment>
+</template>
+<template>
+  <id>271</id>
+  <filename>ShpcAnim.bt</filename>
+  <version>1.0</version>
+  <authors>jam1garner</authors>
+  <description>Parse shpc animation archives.</description>
+  <category>Archive</category>
+  <filemask>*.shpcanim</filemask>
+  <idbytes>53 48 41 4E // SHAN</idbytes>
+  <hash>b1a5343b0a6906e222f8bb1b288832ec1f5019e5</hash>
+  <date>2019-01-02</date>
+  <changeauthor>jam1garner</changeauthor>
+  <comment>Initial Commit</comment>
+</template>
+<template>
+  <id>272</id>
+  <filename>Drive.bt</filename>
+  <version>3.0</version>
+  <updatesversion>2.6</updatesversion>
+  <authors>SweetScape Software, Benjamin Vernoux</authors>
+  <description>Parse logical and physical drives including MBR, FAT12, FAT16, FAT32, exFAT, HFS, NTFS and extended partitions. Can display subdirectories and data for individual files. Note that some NTFS drives may not work properly (see file comments).</description>
+  <category>Drives</category>
+  <filemask>Drive*,Physical*</filemask>
+  <idbytes>[+510] 55 AA,[+1024] 48 2B,[+1024] 48 58</idbytes>
+  <hash>43b2fbb97e72cae6ef8ab34df0fc6ebbfb9bee93</hash>
+  <diffhash>3b98eca4f6d7f9e949855355b8e4ebd04a4aee58</diffhash>
+  <date>2019-01-08</date>
+  <changeauthor>HenryGab</changeauthor>
+  <comment>Add support for exFAT and 4k native sector sizes.</comment>
+</template>
+<template>
+  <id>273</id>
+  <filename>ISO.bt</filename>
+  <version>0.3</version>
+  <updatesversion>0.2</updatesversion>
+  <authors>Anton Kochkov, Richard Perrott</authors>
+  <description>Parse the file system headers for ISO disk images, and print directory tree.</description>
+  <category>Drives</category>
+  <filemask>*.iso</filemask>
+  <hash>21a56822ffe0393037e04ed0720d8f4ece8328a2</hash>
+  <diffhash>f2b980be41db9a5069fc29a070acf28db9b5d029</diffhash>
+  <date>2019-01-11</date>
+  <changeauthor>R Perrott</changeauthor>
+  <comment>A significantly re-write as far as listing directory tree. Used free ECMA-119, 3rd Edition (2017) spec. as reference.</comment>
+</template>
+<template>
+  <id>274</id>
+  <filename>ISO.bt</filename>
+  <version>0.5</version>
+  <updatesversion>0.3</updatesversion>
+  <authors>Anton Kochkov, Richard Perrott</authors>
+  <description>Parse the file system headers for ISO disk images, and print directory tree.</description>
+  <category>Drives</category>
+  <filemask>*.iso</filemask>
+  <hash>39f8662a9065ec433e5283f484a0898a4d34c682</hash>
+  <diffhash>35a7ac4fb267e700bc831cb41cf7dd53a8232a34</diffhash>
+  <date>2019-01-16</date>
+  <changeauthor>R Perrott</changeauthor>
+  <comment>Typedef'd most Little and Big Endian field definitions, removed Rock Ridge suffix from FileIds, and fixed %,d like formatting.</comment>
+</template>
+<template>
+  <id>275</id>
+  <filename>ISO.bt</filename>
+  <version>0.6</version>
+  <updatesversion>0.5</updatesversion>
+  <authors>Anton Kochkov, Richard Perrott</authors>
+  <description>Parse the file system headers for ISO disk images, and print Directory tree.</description>
+  <category>Drives</category>
+  <filemask>*.iso</filemask>
+  <hash>7b3292435f00f24c58a8ca761ff6759048c4cfc1</hash>
+  <diffhash>b6f7e468511bd04195f14fb8dc80baba113ae092</diffhash>
+  <date>2019-01-23</date>
+  <changeauthor>R Perrott</changeauthor>
+  <comment>Added Volume Descriptor validation, started hiding all "." and ".." binary/named hard links, and made other refinements.</comment>
+</template>
+<template>
+  <id>276</id>
+  <filename>7ZIP.bt</filename>
+  <version>0.1</version>
+  <authors>Richard Perrott</authors>
+  <description>Parse 7-Zip archive files.</description>
+  <category>Archive</category>
+  <filemask>*.7z</filemask>
+  <idbytes>37 7A BC AF 27 1C</idbytes>
+  <hash>c3787f077efac529d1274641f2e95391c2a04dd1</hash>
+  <date>2019-01-28</date>
+  <changeauthor>Richard Perrott</changeauthor>
+  <comment>Initial release</comment>
+</template>
+<template>
+  <id>277</id>
+  <filename>ISO.bt</filename>
+  <version>0.7</version>
+  <updatesversion>0.6</updatesversion>
+  <authors>Anton Kochkov, Richard Perrott</authors>
+  <description>Parse the file system headers for ISO disk images, and print Directory tree.</description>
+  <category>Drives</category>
+  <filemask>*.iso</filemask>
+  <hash>e9828ad3ef5e7a60d060c242caaffeedb95d3caf</hash>
+  <diffhash>2a50e65be2e3272ecfbf0146ccdec6f5a04a49be</diffhash>
+  <date>2019-01-29</date>
+  <changeauthor>R Perrott</changeauthor>
+  <comment>Improved number formatting, including using 64-bit *Printf tokens, and added some more file validation.</comment>
+</template>
+<template>
+  <id>278</id>
+  <filename>MP4.bt</filename>
+  <version>3.2</version>
+  <updatesversion>3.1</updatesversion>
+  <authors>Alexey Lyashko, Andrew Molyneux, Marian Denes, SweetScape</authors>
+  <description>Defines a template for parsing MP4 and MOV video files.</description>
+  <category>Video</category>
+  <filemask>*.mp4,*.mov,*.m4v</filemask>
+  <idbytes>[+4] 66 74 79 70, [+4] 6D 6F 6F 76, [+4] 6D 64 61 74</idbytes>
+  <hash>9b185dec67b1b72cf39e462ad4585feab4632ba2</hash>
+  <diffhash>9c3c8aa42e1b0675e04957793187158c46ca5c2b</diffhash>
+  <date>2019-02-02</date>
+  <changeauthor>A. Lyashko</changeauthor>
+  <comment>Added support for fragmented MP4 files.</comment>
+</template>
+<template>
+  <id>279</id>
+  <filename>ADF.bt</filename>
+  <version>0.9</version>
+  <authors>Volker Broemmel (VB)</authors>
+  <description>Detect block types of AmigaDOS disk images.</description>
+  <category>Drives</category>
+  <filemask>*.adf</filemask>
+  <hash>7e276da8daa5142bb2083ca102f1eac802941053</hash>
+  <date>2019-02-07</date>
+  <changeauthor>VB</changeauthor>
+  <comment>initial release</comment>
+</template>
+<template>
+  <id>280</id>
+  <filename>MachO.bt</filename>
+  <version>1.6</version>
+  <updatesversion>1.5</updatesversion>
+  <authors>Tim "diff" Strazzere</authors>
+  <description>Quick template for parsing Mach-o binaries, including Mac OS X executables, .o and .dylib files.</description>
+  <category>Executable</category>
+  <filemask>*,*.o,*.dylib</filemask>
+  <idbytes>CF FA ED FE, CE FA ED FE, BE BA FE CA, CA FE BA BE</idbytes>
+  <hash>4b2f976a8c74596f42c48647471c253ddb5d80ba</hash>
+  <diffhash>1491b173e662e054083ddf645d625cef7fb948ae</diffhash>
+  <date>2019-02-20</date>
+  <changeauthor>nathan@lanza.io</changeauthor>
+  <comment>LC_MAIN is 0x28 | REQ_DYLD - adjust this template accordingly and implement in switch</comment>
+</template>
+<template>
+  <id>281</id>
+  <filename>NTAG215.bt</filename>
+  <version>1.0</version>
+  <authors>Giovanni Cammisa (gcammisa)</authors>
+  <description>NTAG215 Structure parsing.</description>
+  <category>Electronics</category>
+  <hash>802c04aa04a87076d26220b5bab4b5dd617480af</hash>
+  <date>2019-02-23</date>
+  <changeauthor>Giovanni Cammisa (gcammisa)</changeauthor>
+  <comment>First release</comment>
+</template>
+<template>
+  <id>282</id>
+  <filename>AndroidVBMeta.bt</filename>
+  <version>1.0</version>
+  <authors>Bjoern Kerler</authors>
+  <description>Android vbmeta partition template</description>
+  <category>Operating System</category>
+  <filemask>vbmeta.img</filemask>
+  <idbytes>41 56 42 30</idbytes>
+  <hash>07c59382ea3d172cff68341dc1a5763e6d1059d6</hash>
+  <date>2019-02-23</date>
+  <changeauthor>Bjoern Kerler</changeauthor>
+  <comment>Added AVB v1.1</comment>
+</template>
+<template>
+  <id>283</id>
+  <filename>IGI2_TEX.bt</filename>
+  <version>1.0</version>
+  <authors>Rotari Artiom</authors>
+  <description>'IGI 2: Covert Strike' Texture format</description>
+  <category>Game</category>
+  <filemask>*.tex</filemask>
+  <idbytes>4C 4F 4F 50 // LOOP</idbytes>
+  <hash>e209af5951974361b73a3e7d514c52a904be27e2</hash>
+  <date>2019-03-04</date>
+  <changeauthor>Rotari Artiom</changeauthor>
+  <comment>_0, _1, _2, _3 remain unknow PixelFormat 3 is meeted only one time (in file sky_layer1.tex)</comment>
+</template>
+<template>
+  <id>284</id>
+  <filename>IGI2_THM.bt</filename>
+  <version>1.0</version>
+  <authors>Rotari Artiom</authors>
+  <description>'IGI 2: Covert Strike' Terrain Height Map</description>
+  <category>Game</category>
+  <filemask>*.thm</filemask>
+  <idbytes>49 4c 53 46 // ILSF</idbytes>
+  <hash>05b0e89d2aa2576aff441fa155787cf947e85059</hash>
+  <date>2019-03-04</date>
+  <changeauthor>Rotari Artiom</changeauthor>
+  <comment>_1, _2 and _3 remain unknow</comment>
+</template>
+<template>
+  <id>285</id>
+  <filename>IGI2_TLM.bt</filename>
+  <version>1.0</version>
+  <authors>Rotari Artiom</authors>
+  <description>'IGI 2: Covert Strike' Terrain Light Map</description>
+  <category>Game</category>
+  <filemask>*.tlm</filemask>
+  <idbytes>49 4c 53 46 // ILSF</idbytes>
+  <hash>f11a9636d592f7f2748c6f616fb54051e4141f9f</hash>
+  <date>2019-03-04</date>
+  <changeauthor>Rotari Artiom</changeauthor>
+  <comment>_1 remain unknow</comment>
+</template>
+<template>
+  <id>286</id>
+  <filename>IGI2_TMM.bt</filename>
+  <version>1.0</version>
+  <authors>Rotari Artiom</authors>
+  <description>'IGI 2: Covert Strike' Terrain Material Map</description>
+  <category>Game</category>
+  <filemask>*.tmm</filemask>
+  <idbytes>49 4c 53 46 // ILSF</idbytes>
+  <hash>36b47a9efa6eec0834db1da53b376dd952c77ca5</hash>
+  <date>2019-03-04</date>
+  <changeauthor>Rotari Artiom</changeauthor>
+  <comment>_0 and _1 remain unknow</comment>
+</template>
+<template>
+  <id>287</id>
+  <filename>IGI2_WAV.bt</filename>
+  <version>1.0</version>
+  <authors>Rotari Artiom</authors>
+  <description>'IGI 2: Covert Strike' game sound format</description>
+  <category>Game</category>
+  <filemask>*.wav</filemask>
+  <idbytes>49 4c 53 46  // ILSF</idbytes>
+  <hash>ef409a9ef1ee4d99c92c350031988503a0b70d3c</hash>
+  <date>2019-03-04</date>
+  <changeauthor>Rotari Artiom</changeauthor>
+  <comment>WORD _1 remain unknown. It can be 0 or 4097. 4097 is only for few files with FrameRate 22050 or higher</comment>
+</template>
+<template>
+  <id>288</id>
+  <filename>IGI2_RES.bt</filename>
+  <version>1.0</version>
+  <authors>Rotari Artiom</authors>
+  <description>'IGI 2: Covert Strike' Resource pack format</description>
+  <category>Game</category>
+  <filemask>*.res</filemask>
+  <idbytes>49 4C 46 46  // ILFF</idbytes>
+  <hash>382c436420420f39aa71c954c653d47d22111271</hash>
+  <date>2019-03-05</date>
+  <changeauthor>Rotari Artiom</changeauthor>
+  <comment>Initial release</comment>
+</template>
+<template>
+  <id>289</id>
+  <filename>IGI2_SPR.bt</filename>
+  <version>1.0</version>
+  <authors>Rotari Artiom</authors>
+  <description>'IGI 2: Covert Strike' Sprite and Picture format</description>
+  <category>Game</category>
+  <filemask>*.spr;*.pic</filemask>
+  <idbytes>4C 4F 4F 50 // LOOP</idbytes>
+  <hash>16ee209c011f82e36bbb88bfc987047363a95b80</hash>
+  <date>2019-03-05</date>
+  <changeauthor>Rotari Artiom</changeauthor>
+  <comment>Initial release</comment>
+</template>
+<template>
+  <id>290</id>
+  <filename>MachO.bt</filename>
+  <version>1.7</version>
+  <updatesversion>1.6</updatesversion>
+  <authors>Tim "diff" Strazzere</authors>
+  <description>Quick template for parsing Mach-o binaries, including Mac OS X executables, .o and .dylib files.</description>
+  <category>Executable</category>
+  <filemask>*,*.o,*.dylib</filemask>
+  <idbytes>CF FA ED FE, CE FA ED FE, BE BA FE CA, CA FE BA BE</idbytes>
+  <hash>82ff18d73358fbb58a3fb04b597ef8d6b3910a51</hash>
+  <diffhash>e0d8d7c541e6cfdec7038960fd86961147d45a2d</diffhash>
+  <date>2019-03-06</date>
+  <changeauthor>D.Miller</changeauthor>
+  <comment>Fixed ARM64, Added CpuType enum, Changed Load Handling to MAIN, MAIN|DYLD - Changed load command handling to always seek to orig offset + command size after switch</comment>
+</template>
+<template>
+  <id>291</id>
+  <filename>IGI2_TEX.bt</filename>
+  <version>1.1</version>
+  <updatesversion>1.0</updatesversion>
+  <authors>Rotari Artiom</authors>
+  <description>'IGI 2: Covert Strike' Texture format</description>
+  <category>Game</category>
+  <filemask>*.tex</filemask>
+  <idbytes>4C 4F 4F 50 //LOOP</idbytes>
+  <hash>bfc329f05bcf07e81ef347bf1c1224cc8f42aa89</hash>
+  <diffhash>7efd549a71a541c1d9d34ee9371f10defc5cc7c9</diffhash>
+  <date>2019-03-07</date>
+  <changeauthor>Rotari Artiom</changeauthor>
+  <comment>Fight bug with Width and Heigth in Colormap Colormap renamed to Clmap PixelFormat renamed to Flags Switch pixel format by Flags Width and Heigth replaced</comment>
+</template>
+<template>
+  <id>292</id>
+  <filename>VHD.bt</filename>
+  <version>1.2</version>
+  <updatesversion>1.1</updatesversion>
+  <authors>lurker0ster</authors>
+  <description>Microsoft VHD virtual disk format parser.</description>
+  <category>Drives</category>
+  <filemask>*.vhd</filemask>
+  <hash>dd95f99e7941ef540231c125c54481e72e40fecc</hash>
+  <diffhash>d9ea548a48ecb1d5117c546c73e0ea678ffdfe97</diffhash>
+  <date>2019-03-15</date>
+  <changeauthor>tuxuser</changeauthor>
+  <comment>Handle DiskType.FIXED properly</comment>
+</template>
+<template>
+  <id>293</id>
+  <filename>EXE.bt</filename>
+  <version>0.6</version>
+  <updatesversion>0.5</updatesversion>
+  <authors>xSpy, Peter Kankowski, SweetScape Software</authors>
+  <description>Parse Windows executable exe, dll, and sys files. Supports 32 and 64 bit.</description>
+  <category>Executable</category>
+  <filemask>*.exe,*.dll,*.sys</filemask>
+  <idbytes>4D 5A //MZ</idbytes>
+  <hash>71289bcf7e22e0a7136d645abf83b07e92c28ef6</hash>
+  <diffhash>f9d5d298960b4832cd0aadc3d992c92bc8ebe487</diffhash>
+  <date>2019-03-19</date>
+  <changeauthor>Sen Jiang</changeauthor>
+  <comment>Allow NT header to be overlapping with DOS header</comment>
+</template>
+<template>
+  <id>294</id>
+  <filename>Python.bt</filename>
+  <version>1.0</version>
+  <authors>SweetScape Software</authors>
+  <description>Syntax highlighting for Python script files.</description>
+  <category>Syntax</category>
+  <filemask>*.py,*.pyw</filemask>
+  <hash>7f83badbba4b8db06adb4830cb0b63ff93928070</hash>
+  <requiresversion>9</requiresversion>
+  <date>2019-04-02</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Initial version.</comment>
+</template>
+<template>
+  <id>295</id>
+  <filename>ULP.bt</filename>
+  <version>1.2</version>
+  <authors>L. Potjewijd</authors>
+  <description>Syntax highlighting for Eagle 5 user language programs. May not work correctly with earlier or later versions.</description>
+  <category>Syntax</category>
+  <filemask>*.ulp</filemask>
+  <hash>fa55c714b6bf84e5b9bfaca601962cc4d3fede2b</hash>
+  <requiresversion>9</requiresversion>
+  <date>2019-04-08</date>
+  <changeauthor>L. Potjewijd</changeauthor>
+  <comment>converted from version 6 highlight</comment>
+</template>
+<template>
+  <id>296</id>
+  <filename>OrCAD_LIB.bt</filename>
+  <version>1.4</version>
+  <updatesversion>1.3</updatesversion>
+  <authors>L. Potjewijd</authors>
+  <description>Analyse OrCad 3.20a library files.</description>
+  <category>CAD</category>
+  <filemask>*.lib</filemask>
+  <idbytes>4C 49 42 52 41 52 59 20 4F 42 4A 45 43 54 //LIBRARY OBJECT</idbytes>
+  <hash>a806841dc3a1a4b0f2734f5bddce886fd6bab063</hash>
+  <diffhash>d0310bd003730d22e2ca6a26fa939cec1a1ef130</diffhash>
+  <date>2019-04-16</date>
+  <changeauthor>L. Potjewijd</changeauthor>
+  <comment>Corrected various structures, added meanings</comment>
+</template>
+<template>
+  <id>297</id>
+  <filename>DEX.bt</filename>
+  <version>1.2</version>
+  <updatesversion>1.1</updatesversion>
+  <authors>Jon Larimer</authors>
+  <description>A template for analyzing Dalvik VM (Android) DEX files.</description>
+  <category>Operating System</category>
+  <filemask>*.dex</filemask>
+  <idbytes>64 65 78 0A, 64 65 79 0A //dex\n,dey\n</idbytes>
+  <hash>11816fa301016490a6a8b1d7744597951ec399d3</hash>
+  <diffhash>41f314c43647bb7520183a8a1a95747a2e2d3d7b</diffhash>
+  <date>2019-04-25</date>
+  <changeauthor>SweetScape Software</changeauthor>
+  <comment>Fixed runtime error with FieldIdItemRead function.</comment>
+</template>
+<template>
+  <id>298</id>
+  <filename>Modo.bt</filename>
+  <version>1.2</version>
+  <updatesversion>1.1</updatesversion>
+  <authors>Gwynne Reddick (Original version), Simon Beetham (This version)</authors>
+  <description>Reads all known chunks in Modo *.lxo, *.lxp. *.lxe and *.lxl 3D files as documented at http://sdk.luxology.com/wiki/File_Formats.</description>
+  <category>CAD</category>
+  <filemask>*.lx?</filemask>
+  <idbytes>46 4F 52 4D //FORM</idbytes>
+  <hash>34a1bdc8c815fa4a9ba4611dcfc8934afde5d23d</hash>
+  <diffhash>8934bf0cf2e1a5ab8baaf81879f90c8b62c6d5e1</diffhash>
+  <date>2019-05-11</date>
+  <changeauthor>Simon Beetham</changeauthor>
+  <comment>Altered ACTN.CHNS display of Channel names. Added 'SEAM' vmap type. Made Unique vmap processing for each type. Fixed ACTN.GRAD name display.</comment>
+</template>
+<template>
+  <id>299</id>
+  <filename>PCAP.bt</filename>
+  <version>0.4</version>
+  <updatesversion>0.3</updatesversion>
+  <authors>Didier Stevens</authors>
+  <description>Parse a PCAP network capture file.</description>
+  <category>Network</category>
+  <filemask>*.pcap</filemask>
+  <idbytes>D4 C3 B2 A1</idbytes>
+  <hash>925e4759f530fa2ae4236ca5f1d5e8eb341da8cf</hash>
+  <diffhash>d2060cf2e50ec80b71d3ccce677c8fdbc0c8248b</diffhash>
+  <date>2019-05-22</date>
+  <changeauthor>S Gorbov</changeauthor>
+  <comment>support for VLAN header.</comment>
+</template>
+<template>
+  <id>300</id>
+  <filename>RegistryDhcpInterfaceOptions.bt</filename>
+  <version>1.0</version>
+  <authors>Simon N. Thornton</authors>
+  <description>Decode the "DhcpInterfaceOptions" registry entry</description>
+  <category>Operating System</category>
+  <hash>d138a8b36998d0d3606551d4c51134c42b5b8e14</hash>
+  <date>2019-05-27</date>
+  <changeauthor>Simon Thornton</changeauthor>
+  <comment>Fully documented extraction</comment>
+</template>
+<template>
+  <id>301</id>
+  <filename>CSharp.bt</filename>
+  <version>1.0</version>
+  <authors>Tim Evans</authors>
+  <description>Syntax highlighting for C# files.</description>
+  <category>Syntax</category>
+  <filemask>*.cs</filemask>
+  <hash>e4ca5a3b441d8ee132b8c931b3a108318e122a83</hash>
+  <requiresversion>9</requiresversion>
+  <date>2019-05-28</date>
+  <changeauthor>Tim Evans</changeauthor>
+  <comment>Initial version.</comment>
+</template>
+<template>
+  <id>302</id>
+  <filename>CSV.bt</filename>
+  <version>1.0</version>
+  <authors>Tim Evans</authors>
+  <description>Syntax highlighting for CSV files. Supports comma, tab, semicolon, space, and pipe delimiters.</description>
+  <category>Syntax</category>
+  <filemask>*.csv,*.tsv</filemask>
+  <hash>9fa18e85be3363d7c3f920f98eda48db23d98b46</hash>
+  <requiresversion>9</requiresversion>
+  <date>2019-06-18</date>
+  <changeauthor>Tim Evans</changeauthor>
+  <comment>Initial version.</comment>
+</template>
+<template>
+  <id>303</id>
+  <filename>FUTX.bt</filename>
+  <version>0.2</version>
+  <authors>Pascal Mathis</authors>
+  <description>Interpret user accounting information exposed by FreeBSD as /var/run/utx.active, which uses a custom on-disk format called futx. It differs from the in-memory representation specified in POSIX known as utmpx.</description>
+  <category>Operating System</category>
+  <filemask>utx.active</filemask>
+  <hash>34c10758200d29c375d65f0b87b59e80e270c203</hash>
+  <date>2019-06-30</date>
+  <changeauthor>Pascal Mathis</changeauthor>
+  <comment>Fix timestamp calculation and enum comments.</comment>
+</template>
+<template>
+  <id>304</id>
+  <filename>EXE.bt</filename>
+  <version>0.7</version>
+  <updatesversion>0.6</updatesversion>
+  <authors>xSpy, Peter Kankowski, SweetScape Software, mirar</authors>
+  <description>Parse Windows executable exe, dll, and sys files. Supports 32 and 64 bit.</description>
+  <category>Executable</category>
+  <filemask>*.exe,*.dll,*.sys</filemask>
+  <idbytes>4D 5A //MZ</idbytes>
+  <hash>ac448923059df36ddf69b0ea652060b385e2fcbb</hash>
+  <diffhash>2d2e8d241fa49465d98d4bceb125b83e6f0b6f94</diffhash>
+  <date>2019-07-10</date>
+  <changeauthor>mirar</changeauthor>
+  <comment>Added Rich header parsing</comment>
+</template>
+<template>
+  <id>305</id>
+  <filename>MP4.bt</filename>
+  <version>3.3</version>
+  <updatesversion>3.2</updatesversion>
+  <authors>Alexey Lyashko, Andrew Molyneux, Marian Denes, SweetScape, Marko Musa</authors>
+  <description>Defines a template for parsing MP4 and MOV video files.</description>
+  <category>Video</category>
+  <filemask>*.mp4,*.mov,*.m4v</filemask>
+  <idbytes>[+4] 66 74 79 70, [+4] 6D 6F 6F 76, [+4] 6D 64 61 74</idbytes>
+  <hash>17d72bdf805c97165bb5c02490fe75d077680a02</hash>
+  <diffhash>1ad36fdca9191fe99c0a8edfc6400ce3fb2fa93e</diffhash>
+  <date>2019-08-08</date>
+  <changeauthor>M. Musa</changeauthor>
+  <comment>Modified box logic to respect box size in header.</comment>
+</template>
+<template>
+  <id>306</id>
+  <filename>Modo.bt</filename>
+  <version>1.3</version>
+  <updatesversion>1.2</updatesversion>
+  <authors>Gwynne Reddick (Original version), Simon Beetham (This version)</authors>
+  <description>Reads all known chunks in Modo *.lxo, *.lxp. *.lxe and *.lxl 3D files as documented at http://sdk.luxology.com/wiki/File_Formats.</description>
+  <category>CAD</category>
+  <filemask>*.lx?</filemask>
+  <idbytes>46 4F 52 4D //FORM</idbytes>
+  <hash>256bd286c143e0277e3c87168f9798d131dccccd</hash>
+  <diffhash>2f5b2f8787aae783b9f4e4a294b191ec6e94d584</diffhash>
+  <date>2019-08-18</date>
+  <changeauthor>Simon Beetham</changeauthor>
+  <comment>Altered 'DATA' chunk, redefined IASS chunk, detailed SUBS and XREF chunks.</comment>
+</template>
+<template>
+  <id>307</id>
+  <filename>EXE.bt</filename>
+  <version>0.7.1</version>
+  <updatesversion>0.7</updatesversion>
+  <authors>xSpy, Peter Kankowski, SweetScape Software, mirar</authors>
+  <description>Parse Windows executable exe, dll, and sys files. Supports 32 and 64 bit.</description>
+  <category>Executable</category>
+  <filemask>*.exe,*.dll,*.sys</filemask>
+  <idbytes>4D 5A //MZ</idbytes>
+  <hash>ef427212472a9d7a59de61a3fc9186a26b0b3685</hash>
+  <diffhash>1f3c4c6d56936ade932ced6538cac87b5bf439d2</diffhash>
+  <date>2019-09-02</date>
+  <changeauthor>mirar</changeauthor>
+  <comment>Added mapping of Rich id and version on comp.id</comment>
+</template>
+<template>
+  <id>308</id>
+  <filename>Yara.bt</filename>
+  <version>1.0</version>
+  <authors>mirar@chaosmail.org</authors>
+  <description>Syntax highlighting for Yara files</description>
+  <category>Syntax</category>
+  <filemask>*.yr,*.yar,*.yara</filemask>
+  <hash>225f8e838dd6bf6f47844db9c52ff4c8c262e291</hash>
+  <requiresversion>9</requiresversion>
+  <date>2019-09-04</date>
+  <changeauthor>mirar</changeauthor>
+  <comment>initial version</comment>
+</template>
+<template>
+  <id>309</id>
+  <filename>AndroidBoot.bt</filename>
+  <version>1.0</version>
+  <authors>Bjoern Kerler</authors>
+  <description>Android boot image template</description>
+  <category>Operating System</category>
+  <filemask>boot.img</filemask>
+  <idbytes>41 4E 44 52 4F 49 44 21</idbytes>
+  <hash>708270621fc83b1a52b4dca62167182ab218a168</hash>
+  <date>2019-09-05</date>
+  <changeauthor>Bjoern Kerler</changeauthor>
+  <comment>Added QC_DTSize v1.1</comment>
+</template>
+<template>
+  <id>310</id>
+  <filename>AndroidManifest.bt</filename>
+  <version>1.1.1</version>
+  <updatesversion>1.1</updatesversion>
+  <authors>dongmu</authors>
+  <description>Define a template for parsing AndroidManifest.xml binary files.</description>
+  <category>Operating System</category>
+  <filemask>AndroidManifest.xml</filemask>
+  <idbytes>03 00</idbytes>
+  <hash>ed16d6f2a50becb939b68adeb2e6c0ac4bd0a529</hash>
+  <diffhash>b741c1bb4b9af3b5395a0e043c11ac23e9f257d8</diffhash>
+  <date>2019-09-16</date>
+  <changeauthor>lj94093</changeauthor>
+  <comment>add a Read function for STRING_ITEM for better reading</comment>
+</template>
+<template>
+  <id>311</id>
+  <filename>EXE.bt</filename>
+  <version>0.7.2</version>
+  <updatesversion>0.7.1</updatesversion>
+  <authors>xSpy, Peter Kankowski, SweetScape Software, mirar</authors>
+  <description>Parse Windows executable exe, dll, and sys files. Supports 32 and 64 bit.</description>
+  <category>Executable</category>
+  <filemask>*.exe,*.dll,*.sys</filemask>
+  <idbytes>4D 5A //MZ</idbytes>
+  <hash>cf25af63448abbcb711b1b8879bc28da1b225bd6</hash>
+  <diffhash>94ace5244189363ad7a65e21eadea678bc2bf0c1</diffhash>
+  <date>2019-09-16</date>
+  <changeauthor>gf</changeauthor>
+  <comment>CommentBaseRelocBlock detects more cases.</comment>
+</template>
+<template>
+  <id>312</id>
+  <filename>KnyttStoriesWorld.bt</filename>
+  <version>1.0</version>
+  <authors>fe3dback@yandex.ru</authors>
+  <description>Parse knytt stories world file (should by extracted from *.bin)</description>
+  <category>Game</category>
+  <filemask>Map</filemask>
+  <idbytes>78</idbytes>
+  <hash>2f56aa641414c73bf9fa800c3ff6b03602f28383</hash>
+  <date>2019-09-22</date>
+  <changeauthor>fe3dback@yandex.ru</changeauthor>
+  <comment>Initial release</comment>
+</template>
+<script>
+  <id>313</id>
+  <filename>SplitMiffHeaders.1sc</filename>
+  <version>1.0.0</version>
+  <authors>David C. Huffman</authors>
+  <description>Cut (or copy, if source file is read-only) MIFF header(s) to new file(s). Not fully compatible with all valid MIFF files, but should work with those generated by ImageMagick.</description>
+  <category>Format Specific</category>
+  <filemask>*.miff</filemask>
+  <hash>80d99c1c57172af4b13071958de033f515616894</hash>
+  <requiresversion>4</requiresversion>
+  <date>2019-10-14</date>
+  <changeauthor>David C. Huffman</changeauthor>
+  <comment>Initial release. Based on SplitFile.1sc by SweetScape Software.</comment>
+</script>
+<template>
+  <id>314</id>
+  <filename>DynamixelProtocol.bt</filename>
+  <version>0.1</version>
+  <authors>James Newton of HDRobotic.com</authors>
+  <description>Verify returned status data from Dynamixel XL-320 (and other) servoes.</description>
+  <category>Electronics</category>
+  <hash>f8432d9b69db9bc2ba2d37c517a3cf7d661c885f</hash>
+  <date>2019-10-16</date>
+  <changeauthor>James Newton</changeauthor>
+  <comment>Initial version</comment>
+</template>
+<template>
+  <id>315</id>
+  <filename>UnityMetadata.bt</filename>
+  <version>0.1</version>
+  <authors>xia0</authors>
+  <description>Parse unity3d metadata file</description>
+  <category>Game</category>
+  <filemask>*.dat</filemask>
+  <idbytes>FA B1 1B AF</idbytes>
+  <hash>a9a7685079ed7ef54552664f149e559b86cde64f</hash>
+  <date>2019-10-31</date>
+  <changeauthor>xia0</changeauthor>
+  <comment>init basic unity3d metadata info version</comment>
+</template>
+<template>
+  <id>316</id>
+  <filename>DMP.bt</filename>
+  <version>1.2</version>
+  <updatesversion>1.1</updatesversion>
+  <authors>A Schuster</authors>
+  <description>Template to parse the header of a Microsoft memory dump file (DMP) as produced by the debugger and kernel crashdump facility. Note there are two different DMP formats and see MiniDump.bt for ID bytes MDMP.</description>
+  <category>Operating System</category>
+  <filemask>*.dmp</filemask>
+  <idbytes>50 41 47 45 // PAGE</idbytes>
+  <hash>d066b2a85e535eaa8f831c0fd40056c769ad0d98</hash>
+  <diffhash>0e6f5a1fc64745114da418716a9025ffb382fc4e</diffhash>
+  <date>2019-11-01</date>
+  <changeauthor>SweetScape</changeauthor>
+  <comment>Updated ID bytes as this template only works for ID bytes PAGE.</comment>
+</template>
+<template>
+  <id>317</id>
+  <filename>MiniDump.bt</filename>
+  <version>1.0</version>
+  <authors>darknesswind</authors>
+  <description>Template parse struct in Windows MiniDump. The struct define from windows header files.</description>
+  <category>Operating System</category>
+  <filemask>*.dmp</filemask>
+  <idbytes>4D 44 4D 50 93 A7 // MDMP 42899</idbytes>
+  <hash>4df1a658b8baf30b62edb095602e45247978b570</hash>
+  <date>2019-10-31</date>
+  <changeauthor>darknesswind</changeauthor>
+  <comment>1.0 The init version</comment>
+</template>
+<script>
+  <id>318</id>
+  <filename>RateStrings.1sc</filename>
+  <version>0.1.0</version>
+  <authors>Tobias Michalski</authors>
+  <description>Uses Fireeyes StringSifter to Rate Strings</description>
+  <category>Search</category>
+  <hash>782605fee33c43b950917e84ba5487095ae52600</hash>
+  <date>2019-11-22</date>
+  <changeauthor>Tobias Michalski</changeauthor>
+  <comment>Removed external Script. Enhanced Error printing</comment>
+</script>
+<script>
+  <id>319</id>
+  <filename>RateStrings.1sc</filename>
+  <version>0.1.1</version>
+  <updatesversion>0.1.0</updatesversion>
+  <authors>Tobias Michalski</authors>
+  <description>Uses Fireeyes StringSifter to Rate Strings</description>
+  <category>Search</category>
+  <hash>e86d225f8061659d13c6e1e9cf29c9cfbf317e36</hash>
+  <diffhash>5feb0aecf38ff76408826f125f6e71197a2fed7e</diffhash>
+  <date>2019-12-02</date>
+  <changeauthor>Tobias Michalski</changeauthor>
+  <comment>Fixed the command execution</comment>
+</script>
+
+ 

@@ -1,0 +1,8 @@
+010 Editor - Revision Log
+
+The list of changes to 010 Editor is now available in the manual and
+can be accessed by clicking 'Help > View Release Notes' on the 
+010 Editor main menu. The release notes are also available online at:
+
+    http://www.sweetscape.com/010editor/release_notes.html
+

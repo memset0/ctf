@@ -1,0 +1,25 @@
+﻿<010EditorNews ver="1.0" revision="42">
+<meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8">
+    <newversion>10.0</newversion>
+    <item link="010editor/latest_version.html" minVersion="3.0.0" maxVersion="10.0">调试器现在可用</item>
+    <item link="010editor/latest_version.html" minVersion="3.0.0" maxVersion="9.0.2">010 Editor v10.0 发布 - 点击此处了解详情
+</item>
+    <item link="-1400" minVersion="10.0" maxVersion="10.0">在 10.0 版本中有何新功能？</item>
+    <item link="-1400" minVersion="9.0" maxVersion="9.0">在 9.0 版本中有何新功能？</item>
+    <item link="-1400" minVersion="8.0" maxVersion="8.0">在 8.0 版本中有何新功能？</item>
+    <item link="-1400" minVersion="7.0" maxVersion="7.0">在 7.0 版本中有何新功能？</item>
+    <item link="-1400" minVersion="6.0" maxVersion="6.0">在 6.0 版本中有何新功能？</item>
+    <item link="-1400" minVersion="5.0" maxVersion="5.0">在 5.0 版本中有何新功能？</item>
+    <item link="-1400" minVersion="4.0" maxVersion="4.0">在 4.0 版本中有何新功能？</item>
+    <item link="-1400" minVersion="3.2" maxVersion="3.2">在 3.2 版本中有何新功能？</item>
+    <item link="-1400" minVersion="3.1" maxVersion="3.1">在 3.1 版本中有何新功能？</item>
+    <item link="-1400" minVersion="3.0" maxVersion="3.0">在 3.0 版本中有何新功能？</item>
+    <item link="-choosetheme" minVersion="8.0" maxVersion="10.0">目前可用的主题</item>
+    <item link="-repositorydialog" minVersion="7.0" maxVersion="10.0">查看存储库对话框</item>
+    <item link="-tutorialrepository" minVersion="7.0" maxVersion="10.0">教程: 使用存储库</item>
+    <item link="-tutorialwriting" minVersion="6.0" maxVersion="10.0">教程: 编写二进制模板</item>
+    <item link="-tutorial">教程: 使用二进制模板</item>
+    <item link="010editor/mac_osx.html" minVersion="3.0.0" maxVersion="4.0">Mac OS X 版本目前可用</item>
+    <item link="-1000">使用 010 Editor 入门</item>
+    <item link="010editor/templates/" minVersion="3.0" maxVersion="6.0">访问在线模板存储库</item>
+</010EditorNews>
