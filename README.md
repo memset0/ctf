@@ -8,10 +8,6 @@ CTF 好难，还是 OI 好
 
 收藏的一些入门教程（
 
-### crypto
-
-* 
-
 ### misc
 
 * http://archive.is/2LVJG - misc - LSB + IDAT + ...
