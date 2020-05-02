@@ -1,13 +1,16 @@
 import pwn
 import random
 
+# pwn.context.log_level = "debug"
 
 def solve():
     counter = 0
     while True:
         server = pwn.remote('139.9.203.33', 30003)
         server.recvuntil('Input your choice>')
-        seeds = list(range(0, 23333))
+        seeds = []
+        for num in range(10):
+            seeds.append(num * num + 233)
         counter = counter + 1
         while True:
             output = seeds[random.randint(0, len(seeds) - 1)] % 3
@@ -26,9 +29,7 @@ def solve():
                 break
             if '(100/100)' in res:
                 print(res)
-                print(str(server.recvlines(1)))
-                print(str(server.recvlines(1)))
-                print(str(server.recvlines(1)))
+                server.interactive()
                 return
 
             next_seeds = set()
