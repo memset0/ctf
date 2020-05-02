@@ -1,1 +1,1 @@
-flag = '123'
+flag = 'flag{something}'
