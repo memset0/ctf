@@ -1,0 +1,31 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import os
+from flask import request
+from flask import Flask
+
+flag = open('./flag', 'rb')
+
+os.remove('./flag')
+
+
+app = Flask(__name__)
+app.secret_key = '6060b0c615e5237bf1729a072e9c7cb3'
+
+
+@app.route('/')
+def index():
+    return open(__file__).read()
+
+
+@app.route("/read", methods=['POST'])
+def read():
+    file = request.form["file"].strip()
+    if os.path.exists(file):
+        return open(file).read()
+    return "Not found"
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=8023, debug=False)
