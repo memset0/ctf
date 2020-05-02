@@ -1,0 +1,25 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sat May  2 13:51:48 2020
+Invocation: foremost progress1.jpg 
+Output directory: /Users/memset0/Git/ctf/ctf.ruanx.net/misc/Yankee with no brim/output
+Configuration file: /usr/local/etc/foremost.conf
+------------------------------------------------------------------
+File: progress1.jpg
+Start: Sat May  2 13:51:48 2020
+Length: Unknown
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.jpg 	       7 KB 	          0 	 
+1:	00000014.png 	     191 KB 	       7596 	  (600 x 500)
+Finish: Sat May  2 13:51:48 2020
+
+2 FILES EXTRACTED
+	
+jpg:= 1
+png:= 1
+------------------------------------------------------------------
+
+Foremost finished at Sat May  2 13:51:48 2020

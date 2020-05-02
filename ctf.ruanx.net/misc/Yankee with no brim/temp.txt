@@ -1,0 +1,14 @@
+（固定）八个字节89 50 4E 47 0D 0A 1A 0A为png的文件头
+- （固定）四个字节00 00 00 0D（即为十进制的13）代表数据块的长度为13
+- （固定）四个字节49 48 44 52（即为ASCII码的IHDR）是文件头数据块的标示（IDCH）
+- （可变）13位数据块（IHDR)
+    - 前四个字节代表该图片的宽
+    - 后四个字节代表该图片的高
+    - 后五个字节依次为：
+    Bit depth、ColorType、Compression method、Filter method、Interlace method
+- （可变）剩余四字节为该png的CRC检验码，由从IDCH到IHDR的十七位字节进行crc计算得到
+————————————————
+版权声明：本文为CSDN博主「go_to_hacker」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/persist213/java/article/details/79374914
+
+be6698dc
