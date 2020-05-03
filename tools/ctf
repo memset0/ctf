@@ -15,6 +15,7 @@ path = {
 config = {
 	'server': 'aliyun-server',
 	'self': os.path.join(path['ctf'], 'tools', 'ctf'),
+	'shell': 'zsh'
 }
 
 command = {
@@ -35,7 +36,7 @@ command = {
 	'google': [config['self'], 'browser', 'https://google.com'],
 	'zhihu': [config['self'], 'browser', 'https://zhihu.com'],
 	'cyberchef': [config['self'], 'browser', 'https://gchq.github.io/CyberChef/'],
-	'yafu': [config['self'], 'server', os.path.join(path['remote_ctf'], 'tools', 'yafu', 'yafu')],
+	'yafu': [config['self'], 'server', '-t', os.path.join(path['remote_ctf'], 'tools', 'yafu', 'yafu')],
 }
 
 
