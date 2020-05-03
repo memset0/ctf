@@ -2,8 +2,10 @@
 
 CTF 好难
 
+求大佬带带我（大哭
 
-## useful links
+
+## useless links
 
 收藏的一些入门教程（
 
@@ -20,4 +22,5 @@ CTF 好难
 
 ### crypto
 
-* http://archive.is/8opRE - RSA 算法
+* http://archive.is/8opRE - RSA 入门
+* http://archive.is/AAu8C - RSA 相关
