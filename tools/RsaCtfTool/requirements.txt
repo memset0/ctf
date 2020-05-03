@@ -1,6 +1,0 @@
-pycryptodome
-GMPY2
-SymPy
-requests
-six
-cryptography
