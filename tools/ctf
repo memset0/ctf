@@ -30,12 +30,15 @@ command = {
 
 	'stegsolve': ['java', '-jar', os.path.join(path['ctf'], 'tools', 'Stegsolve', 'Stegsolve.jar')],
 
+	'rsa_solve': ['python', os.path.join(path['ctf'], 'tools', 'RSA-tool', 'solve.py')],
+
 	'zrchpr': ['wine', os.path.join(path['wine'], 'Program\ Files\ \(x86\)/Elcomsoft\ Password\ Recovery/Advanced\ Archive\ Password\ Recovery/ARCHPR.exe')],
 	'010editor': ['wine', os.path.join(path['ctf'], 'tools', '010Editor', '010Editor.exe')],
 
 	'google': [config['self'], 'browser', 'https://google.com'],
 	'zhihu': [config['self'], 'browser', 'https://zhihu.com'],
 	'cyberchef': [config['self'], 'browser', 'https://gchq.github.io/CyberChef/'],
+
 	'yafu': [config['self'], 'server', '-t', os.path.join(path['remote_ctf'], 'tools', 'yafu', 'yafu')],
 }
 
@@ -66,6 +69,7 @@ def run(prog, argv):
 		shell = ' '.join((cmd if isinstance(cmd, list) else [cmd]) + argv)
 		print(colorama.Fore.GREEN + prog + colorama.Fore.YELLOW + ' >> ' + colorama.Fore.GREEN + shell + colorama.Style.RESET_ALL)
 		os.system(shell)
+
 
 if __name__ == '__main__':
 	# print(path, command)
