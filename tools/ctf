@@ -18,6 +18,8 @@ command = {
 	'wine64': 'wine64',
 
 	'zsteg': 'zsteg',
+	'binwalk': 'binwalk',
+	'pngcheck': 'pngcheck',
 
 	'stegsolve': ['java', '-jar', os.path.join(path['ctf'], 'tools', 'Stegsolve', 'Stegsolve.jar')],
 
