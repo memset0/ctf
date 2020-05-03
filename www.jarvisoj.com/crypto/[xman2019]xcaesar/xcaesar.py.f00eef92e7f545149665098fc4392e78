@@ -1,0 +1,20 @@
+#!/usr/bin/python
+
+import base64
+
+def caesar_encrypt(m,k):
+    r=""
+    for i in m:
+        r+=chr((ord(i)+k)%128)
+        # print((ord(i)+k)%128)
+    return r
+
+# from secret import m,k
+m = 'flag{test}'
+k = 114514
+e = caesar_encrypt(m,k)
+print e
+print base64.b64encode(e)
+print base64.b64decode(base64.b64encode(e)).decode()
+
+#output:bXNobgJyaHB6aHRwdGgE
