@@ -9,6 +9,12 @@ import webbrowser
 path = {
 	'ctf': os.path.realpath(os.path.join(os.path.split(os.path.realpath(__file__))[0], '../')),
 	'wine': os.path.expanduser('~/.wine/drive_c'),
+	'remote_ctf': '/root/ctf',
+}
+
+config = {
+	'server': 'aliyun-server',
+	'self': os.path.join(path['ctf'], 'tools', 'ctf'),
 }
 
 command = {
@@ -26,19 +32,34 @@ command = {
 	'zrchpr': ['wine', os.path.join(path['wine'], 'Program\ Files\ \(x86\)/Elcomsoft\ Password\ Recovery/Advanced\ Archive\ Password\ Recovery/ARCHPR.exe')],
 	'010editor': ['wine', os.path.join(path['ctf'], 'tools', '010Editor', '010Editor.exe')],
 
-	'google': [path['ctf'] + '/tools/ctf', 'browser', 'https://google.com'],
-	'zhihu': [path['ctf'] + '/tools/ctf', 'browser', 'https://zhihu.com'],
-	'cyberchef': [path['ctf'] + '/tools/ctf', 'browser', 'https://gchq.github.io/CyberChef/'],
+	'google': [config['self'], 'browser', 'https://google.com'],
+	'zhihu': [config['self'], 'browser', 'https://zhihu.com'],
+	'cyberchef': [config['self'], 'browser', 'https://gchq.github.io/CyberChef/'],
+	'yafu': [config['self'], 'server', os.path.join(path['remote_ctf'], 'tools', 'yafu', 'yafu')],
 }
 
 
 def run(prog, argv):
+
 	if prog == 'ls' or prog == 'list':
 		print(' '.join(sorted(command.keys())))
+		return
+
 	if prog == 'browser':
 		webbrowser.open(argv[0])
+		return
+
+	if prog == 'ssh' or prog == 'server':
+		sev = config['server']
+		cmd = ' '.join(argv).replace('"', '\"')
+		os.system('ssh {sev} {cmd}'.format(sev=sev, cmd=cmd))
+		return
+
 	if prog == 'search':
-		webbrowser.open('https://www.google.com/search?q=%s' % (' '.join(argv)))
+		keywords = ' '.join(argv)
+		webbrowser.open('https://www.google.com/search?q={keywords}'.format(keywords=keywords))
+		return
+
 	if prog in command.keys():
 		cmd = command[prog]
 		shell = ' '.join((cmd if isinstance(cmd, list) else [cmd]) + argv)
